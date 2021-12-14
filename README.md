@@ -1,4 +1,37 @@
 
+1.firebase - vartotoju lentelės:
+
+newUser_DB (kas platformoje sukuria paskyra ir ją valdys : pvz direktorius. Skirtingi laužynai skirtingos paskyros, tai manau kad reiktų atskiros lentelės)
+        (Authentication: vardas, slaptazodis, email ) (paskui viduje bus : Vartotojo pavadinimas kuris bus matomas viešai, vieta,)
+        newUser tures savi ID  ir prie to id galės kabinti accountUsers .
+	newUser ištrina savo paskyrą ir viskas dingsta.
+             
+accountUsers_DB (darbuotoju pvz: vardas, ar  pavarde , ar pravardė)
+             (vardai gali kartotis! tad reikia ,kad taip nenutiktų)
+
+accountUserGroup_DB (pareigos: sandelininkas, vadybininkas, vairuotojas, buhaltere , pardavėjas ir tt..)
+  	accUsers bus priskirtos accUserGroup , ir pagal pareigas bus atitinkamai rodomas turinys)
+    
+
+
+2.firebase content lentelės:
+
+dismantleCars_DB ( carName,carModel,carYear, carGearBox, carColor, carFoto )
+             (carName : Audi + submenu (carModel: A4, A6 ,Q7)
+
+
+
+
+/* cia gal geriau i componenta sudeti..
+carPartsMenu_DB (varikliai,dežes,salonas, skardos. ir tt)
+carPartsSubMenu_DB (pvz: varikliai= dyzelinis,benzininis,dujos,hibridas.. / subkategorija: generatorius,starteris,forsunkes..ir tt).
+*/
+
+
+
+
+
+
 # Naudotų auto detalių sandėliavimas ir pardavimas
 
 
