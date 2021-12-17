@@ -1,3 +1,13 @@
+Pataisymas nuo Ernesto:
+* Bus viena duomenu baze, ir bus daug lenteliu.
+* Vietoj newUser_DB labiau tiktu toks lenteles pavadinimas: Company arba Organization. Nes čia bus autolaužynai o ne patys vartotojai
+* Vietoj acccountUsers_DB gali buti tiesgio Users, nes čia jau sėdės konkretūs vartotojai priklausantys laužynams
+* accountUserGroup_DB tiesiog UserGroup arba tiesiog Roles. Kuris nusako kas per useris
+* su cars geriausia turėti Cars lentelę, kurioje yra automobiliai jų markės, pagaminimo metai ir t.t
+* galima tureti Parts kuris turės CarId, kad žinoti kokiai mašinai priklauso, bei PartCategoryId, kad žinoti kokiai dalių kategorijai priklauso
+* ir galiausiai Part_Categories lentelė
+
+
 
 1.firebase - vartotoju lentelės:
 
