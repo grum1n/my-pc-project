@@ -1,12 +1,13 @@
+
 import React from 'react';
 import './styles/frontStyle.css';
 
-function App() {
+const App = () => {
   return (
     <div>
       test
     </div>
   );
-}
+};
 
 export default App;
