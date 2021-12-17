@@ -3,12 +3,18 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
-        <div>
-            <p>Login page</p>
-            <Link to="/dashboard">
-                Dashboard page
-            </Link>
-        </div>
+    <section className="container flex-center">
+      <div className="login-container">
+        <form className="flex-column form-box">
+          <input className="login-input" type="text" placeholder="Email" />
+          <input className="login-input" type="password" placeholder="Password"/>
+          <input className="registerButton" type="button" value=" Log in " />
+        </form>
+        <p>
+          <Link className="login-link" to="/register">Link to register page</Link>
+        </p>
+      </div>
+    </section>
   );
 };
 

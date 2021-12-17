@@ -2,9 +2,11 @@ import React from 'react';
 
 const Home = () => {
   return (
-        <div>
+    <>
+      <section className="container flex-center">
              Home page
-        </div>
+      </section>
+    </>
   );
 };
 

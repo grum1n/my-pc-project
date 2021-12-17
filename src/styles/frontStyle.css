@@ -41,8 +41,17 @@ img{
   padding:0 20px;
 }
 .flex-container {display: flex;}
-.flex-col {display: flex;flex-direction: column;}
+.flex-column {display: flex;flex-direction: column;}
 .flex-between {display: flex;justify-content: space-between;}
+.flex-center {display: flex;justify-content: center;}
+
+::placeholder {
+  color: var(--dark-gray);
+  font-size: 1em;
+  font-family: var(--font-Montserrat);
+}
+:-ms-input-placeholder { color:var(--dark-gray);}/* Internet Explorer 10-11 */
+::-ms-input-placeholder { color: var(--dark-gray);}/* Microsoft Edge */
 
 /*Header*/
 header {
@@ -55,19 +64,16 @@ header {
 }
 
 /*Header Nav*/
-nav{
-  margin: 0 auto;
-  max-width: 1680px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-}
-ul{
+nav {align-items: center;}
+ul {
   width: 100%;
   justify-content: flex-end;
 }
+.navigation-li{
+  margin: 0 12px;
+}
 /*register button*/
-a.registerButton{
+.registerButton{
   background-color: var(--blue);
   color: var(--white);
   font-family: var(--font-Montserrat);
@@ -81,16 +87,16 @@ a.registerButton{
   letter-spacing: -0.015em;
   width: 130px;
   height: 40px;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
 }
-a.registerButton:hover {
+.registerButton:hover {
   background-color: var(--dark-gray);
   color: var(--white);
 }
 /*Login button*/
-a.loginButton{
-  margin: 0 12px;
+.loginButton{
   background-color: var(--white);
   color: var(--blue);
   font-family: var(--font-Montserrat);
@@ -108,7 +114,7 @@ a.loginButton{
   border-radius: 6px;
   cursor: pointer;
 }
-a.loginButton:hover {
+.loginButton:hover {
   background-color: var(--dark-gray);
   color: var(--white);
   border:1px solid var(--dark-gray);
@@ -116,7 +122,53 @@ a.loginButton:hover {
 
 /*Main*/
 main{
-  padding: 200px 0;
-  background-color: green;
+  padding: 100px 0;
+  background-color: var(--blue);
   height: 100vh;
+}
+
+/*Home page*/
+
+/*Login page*/
+.login-container{
+  margin:100px;
+  padding: 64px;
+  max-width: 622px;
+  background-color: var(--white);
+  height: 100%;
+  border: 1px solid var(--dark-gray);
+  box-shadow: 0 0 10px var(--dark-gray);
+}
+.form-box{text-align: left;}
+.login-input{
+  min-width: 280px;
+  background: var(--white);
+  box-sizing: border-box;
+  border: 1px solid var(--dark-gray);
+  padding: 10px;
+  margin-bottom: 24px;
+}
+.login-link{
+  margin: 20px 0 0;
+  display: block;
+  float:right;
+  color: var(--dark-gray);
+  font-family: var(--font-Montserrat);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  letter-spacing: -0.015em;
+  cursor: pointer;
+}
+.login-link:hover{color: var(--blue);}
+
+/*Register page*/
+h4{
+  margin-bottom: 43px;
+  font-family: var(--font-Montserrat);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.015em;
+  color: var(--);
 }

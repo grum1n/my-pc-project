@@ -5,12 +5,12 @@ import LogoImage from '../../components/LogoImage';
 const Header = () => {
   return (
         <header>
-            <nav className='flex-container'>
+            <nav className='container flex-container'>
             <Link to="/">
                 <LogoImage />
             </Link>
             <ul className='flex-container'>
-                <li>
+                <li className="navigation-li">
                     <Link className="loginButton" to="/login">
                         Login in
                     </Link>
