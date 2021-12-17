@@ -121,17 +121,25 @@ ul {
 }
 
 /*Main*/
-main{
-  padding: 100px 0;
-  background-color: var(--blue);
+.frontSide-main{
+  background-color: var(--blue);/*temporarily*/
   height: 100vh;
+}
+.top-section{
+  padding: 150px 0;
+}
+/*Dashboard-main*/
+.dashboard-main{
+  background-color: var(--dark-gray);/*temporarily*/
+  color: var(--white);
+  height: 100vh;
+
 }
 
 /*Home page*/
 
 /*Login page*/
 .login-container{
-  margin:100px;
   padding: 64px;
   max-width: 622px;
   background-color: var(--white);

@@ -1,17 +1,17 @@
 import React from 'react';
 import Header from '../../components/Header';
 
-const Home = () => {
+const Dashboard = () => {
   return (
     <>
       <Header />
-      <main className="frontSide-main">
+      <main className="dashboard-main">
         <section className="container flex-center top-section">
-              Home page
+            Dashboard page
         </section>
       </main>
     </>
   );
 };
 
-export default Home;
+export default Dashboard;
