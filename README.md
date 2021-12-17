@@ -1,4 +1,40 @@
-Pataisymas nuo Ernesto:
+
+
+****************************************
+# server 
+  Firebase
+
+*****************************************
+# webBackSide
+  admin dashboard
+
+# webFrontSide
+  client side
+******************************************
+# STYLE
+
+Font:
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+font-family: 'Montserrat', sans-serif;
+
+Background color:
+background: #FFFFFF;
+
+Font colors:
+background: #000000;
+background: #000000CC;
+background: #18A0FB;
+
+Button colors: 
+background: #18A0FB;
+background: #FFFFFF;
+
+Logo:
+CarPlogo.png
+
+*******************************************
+
+# Pataisymas nuo Ernesto:
 * Bus viena duomenu baze, ir bus daug lenteliu.
 * Vietoj newUser_DB labiau tiktu toks lenteles pavadinimas: Company arba Organization. Nes čia bus autolaužynai o ne patys vartotojai
 * Vietoj acccountUsers_DB gali buti tiesgio Users, nes čia jau sėdės konkretūs vartotojai priklausantys laužynams

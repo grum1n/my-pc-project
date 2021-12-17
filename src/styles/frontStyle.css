@@ -1,8 +1,45 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Nunito", sans-serif;
-  }
-  
-  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+*,
+*::before,
+*::after {box-sizing: border-box;}
+:root {
+    --black:#000000;
+    --white:#ffffff;
+    --dark-gray:#000000CC;
+    --blue:#18A0FB;
+    --font-Montserrat:'Montserrat', sans-serif;
+}
+
+html, body {margin: 0;font-family: var(--font-Montserrat);font-size: 16px;}
+a {text-decoration: none;}
+ul, li {margin: 0;padding: 0;list-style-type: none;}
+h1, h2 ,h3 ,h4 ,h5 , p{margin: 0;}
+
+.col-1 {grid-area: col-1;}
+.col-2 {grid-area: col-2;}
+.col-3 {grid-area: col-3;}
+.col-4 {grid-area: col-4;}
+.col-5 {grid-area: col-5;}
+.col-6 {grid-area: col-6;}
+.col-7 {grid-area: col-7;}
+.col-8 {grid-area: col-8;}
+.col-9 {grid-area: col-9;}
+.col-10 {grid-area: col-10;}
+
+.site-header {
+  background-color:var(--white);
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index:100;
+  padding: 20px 0;
+}
+.row {text-align: center;}
+.container {
+  max-width:1680px;
+  margin: 0 auto;
+  padding:0 20px;
+}
+.flex-container {display: flex;}
+.flex-col {display: flex;flex-direction: column;}
+.flex-between {display: flex;justify-content: space-between;}
