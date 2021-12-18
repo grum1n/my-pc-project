@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './DashBoardSidebarData';
+import DashboardLogo from './DashboardLogoImage';
 
 const DashboardNavbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -13,6 +14,9 @@ const DashboardNavbar = () => {
             <IconContext.Provider value={{ color: '#fff' }} >
                 <header className="dashboard-header">
                     <nav className='container flex-container'>
+                    <Link to="/">
+                        <DashboardLogo />
+                    </Link>
                     <Link to="#" className="menu-bars">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>

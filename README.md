@@ -12,7 +12,7 @@
   client side
 ******************************************
 # STYLE
-Design:
+Design front:
 Sample Wireframe Figma
 
 Font:
@@ -21,6 +21,7 @@ font-family: 'Montserrat', sans-serif;
 
 Background color:
 background: #FFFFFF;
+background: #060b26;
 
 Font colors:
 background: #000000;
