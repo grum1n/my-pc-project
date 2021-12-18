@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
+import { SidebarData } from './DashBoardSidebarData';
 
 const DashboardNavbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -17,7 +18,7 @@ const DashboardNavbar = () => {
                     </Link>
                     <ul className='flex-container'>
                         <li className="navigation-li">
-                            <Link className="loginButton" to="/login">
+                            <Link className="registerButton" to="/login">
                                 Log out
                             </Link>
                         </li>
@@ -31,6 +32,16 @@ const DashboardNavbar = () => {
                                 <AiIcons.AiOutlineClose />
                             </Link>
                         </li>
+                        {SidebarData.map((item, index) => {
+                          return (
+                            <li key={index} className={item.cName}>
+                                <Link to={item.path}>
+                                    {item.icon}
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                          );
+                        })}
                     </ul>
                 </nav>
             </IconContext.Provider>

@@ -1,5 +1,4 @@
 import React from 'react';
-// import DashboardHeader from '../../components/DachboardHeader';
 import DashboardNavbar from '../../components/DashboardNavbar';
 
 const Dashboard = () => {
