@@ -1,10 +1,11 @@
 import React from 'react';
-import Header from '../../components/Header';
+// import DashboardHeader from '../../components/DachboardHeader';
+import DashboardNavbar from '../../components/DashboardNavbar';
 
 const Dashboard = () => {
   return (
     <>
-      <Header />
+      <DashboardNavbar />
       <main className="dashboard-main">
         <section className="container flex-center top-section">
             Dashboard page
