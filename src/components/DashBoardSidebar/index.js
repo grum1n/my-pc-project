@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './dashboardSidebar.css';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { IconContext } from 'react-icons';
@@ -6,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './DashBoardSidebarData';
 import DashboardLogo from './DashboardLogoImage';
 
-const DashboardNavbar = () => {
+const DashBoardSidebar = () => {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
   return (
@@ -18,7 +19,7 @@ const DashboardNavbar = () => {
                             <Link to="/dashboard">
                                 <DashboardLogo />
                             </Link>
-                            <Link to="#" className="menu-bars">
+                            <Link to="#" className="dashboard-menu-bars">
                                 <FaIcons.FaBars onClick={showSidebar} />
                             </Link>
                         </div>
@@ -31,10 +32,10 @@ const DashboardNavbar = () => {
                         </ul>
                     </nav>
                 </header>
-                <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                    <ul className='nav-menu-item' onClick={showSidebar}>
-                        <li className='navbar-toggle'>
-                            <Link to="#" className='menu-bars'>
+                <nav className={sidebar ? 'dashboard-nav-menu active' : 'dashboard-nav-menu'}>
+                    <ul className='dashboard-nav-menu-item' onClick={showSidebar}>
+                        <li className='dashboard-navbar-toggle'>
+                            <Link to="#" className='dashboard-menu-bars'>
                                 <AiIcons.AiOutlineClose />
                             </Link>
                         </li>
@@ -55,4 +56,4 @@ const DashboardNavbar = () => {
   );
 };
 
-export default DashboardNavbar;
+export default DashBoardSidebar;

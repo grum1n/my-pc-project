@@ -1,10 +1,10 @@
 import React from 'react';
-import dashboardimgPath from '../images/CarPLogo4.png';
+import dashboardimgPath from '../../images/CarPLogo4.png';
 
 const DashboardLogo = () => {
   return (
     <>
-        <img src={dashboardimgPath} />
+      <img src={dashboardimgPath} />
     </>
   );
 };

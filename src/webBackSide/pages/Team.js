@@ -1,10 +1,10 @@
 import React from 'react';
-import DashboardNavbar from '../../components/DashboardNavbar';
+import DashBoardSidebar from '../../components/DashBoardSidebar';
 
 const Team = () => {
   return (
     <>
-      <DashboardNavbar />
+      <DashBoardSidebar />
       <main className="dashboard-main">
         <section className="container flex-center top-section">
             Team page

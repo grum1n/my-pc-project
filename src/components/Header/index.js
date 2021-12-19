@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LogoImage from './LogoImage';
-import '../styles/frontStyle.css';
+import LogoImage from '../LogoImage';
+import './header.css';
 import * as FaIcons from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import * as AiIcons from 'react-icons/ai';
