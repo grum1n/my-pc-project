@@ -7,16 +7,15 @@ const Login = () => {
     <>
       <Header />
       <main className="frontSide-main">
-        <section className="container flex-center top-section">
-          <div className="login-container">
-            <form className="flex-column form-box">
+        <section className="hero">
+          <div className="container login-form-box">
+            <form className="flex-column ">
               <input className="login-input" type="text" placeholder="Email" />
-              <input className="login-input" type="password" placeholder="Password"/>
-              {/* <input className="registerButton" type="button" value=" Log in " /> */}
-              <Link className="registerButton" to="/dashboard">Log in to Dashboard</Link>
+              <input className="login-input" type="password" placeholder="Slaptažodis"/>
+              <Link className="login-button" to="/dashboard">Prisijungti į Dashboard</Link>
             </form>
             <p>
-              <Link className="login-link" to="/register">Link to register page</Link>
+              <Link className="login-bottom-text" to="/register">Čia galite susikurti paskyrą</Link>
             </p>
           </div>
         </section>

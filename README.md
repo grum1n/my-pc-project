@@ -12,8 +12,8 @@
   client side
 ******************************************
 # STYLE
-Design front:
-Sample Wireframe Figma
+Design :
+Sample Wireframe Figma and Comied MainFile
 
 Font:
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
@@ -22,15 +22,19 @@ font-family: 'Montserrat', sans-serif;
 Background color:
 background: #FFFFFF;
 background: #060b26;
+background: #F9F1E7;
+
+Background hero: #9B8F64;
 
 Font colors:
 background: #000000;
-background: #000000CC;
-background: #18A0FB;
+background: #CB995A;
+background: #333333;
 
 Button colors: 
-background: #18A0FB;
+background: #CB995A;
 background: #FFFFFF;
+background: #000000;
 
 Logo:
 CarPlogo.png

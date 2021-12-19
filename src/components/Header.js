@@ -6,22 +6,37 @@ import '../styles/frontStyle.css';
 const Header = () => {
   return (
         <header>
-            <nav className='container flex-container'>
-            <Link to="/">
-                <LogoImage />
-            </Link>
-            <ul className='flex-container'>
-                <li className="navigation-li">
-                    <Link className="loginButton" to="/login">
-                        Login in
-                    </Link>
-                </li>
-                <li>
-                    <Link className="registerButton" to="/register">
-                        Register
-                    </Link>
-                </li>
-            </ul>
+            <nav className='flex-between'>
+                <Link to='/'>
+                    <LogoImage />
+                </Link>
+                <ul className='navigation flex-container'>
+                    <li>
+                        <Link to='/'>
+                            Pagrindinis
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/'>
+                            Apie mus
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/'>
+                            Laužynai
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/'>
+                            Kontaktai
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/login' className='active'>
+                            Prisijungti
+                        </Link>
+                    </li>
+                </ul>
             </nav>
         </header>
   );

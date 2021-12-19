@@ -13,20 +13,22 @@ const DashboardNavbar = () => {
         <>
             <IconContext.Provider value={{ color: '#fff' }} >
                 <header className="dashboard-header">
-                    <nav className='container flex-container'>
-                    <Link to="/">
-                        <DashboardLogo />
-                    </Link>
-                    <Link to="#" className="menu-bars">
-                        <FaIcons.FaBars onClick={showSidebar} />
-                    </Link>
-                    <ul className='flex-container'>
-                        <li className="navigation-li">
-                            <Link className="registerButton" to="/login">
-                                Log out
+                    <nav className='flex-between'>
+                        <div className='flex-container'>
+                            <Link to="/dashboard">
+                                <DashboardLogo />
                             </Link>
-                        </li>
-                    </ul>
+                            <Link to="#" className="menu-bars">
+                                <FaIcons.FaBars onClick={showSidebar} />
+                            </Link>
+                        </div>
+                        <ul className='flex-container'>
+                            <li>
+                                <Link className="logout-button" to="/login">
+                                    Atsijungti
+                                </Link>
+                            </li>
+                        </ul>
                     </nav>
                 </header>
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

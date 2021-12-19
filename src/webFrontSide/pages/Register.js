@@ -7,18 +7,18 @@ const Register = () => {
     <>
       <Header />
       <main className="frontSide-main">
-        <section className="container flex-center top-section">
-          <div className="login-container">
+        <section className="hero">
+          <div className="container login-form-box">
             <form className="flex-column form-box">
-              <h4>Sign up for a free account</h4>
-              <input className="login-input" type="text" placeholder="Name" />
+              <h4 className="register-form-title">Susikurkite paskyrą nemokamai</h4>
+              <input className="login-input" type="text" placeholder="Vardas" />
               <input className="login-input" type="email" placeholder="Email" />
-              <input className="login-input" type="password" placeholder="Password"/>
-              <input className="login-input" type="password" placeholder="Confirm password"/>
-              <input className="registerButton" type="button" value=" Register " />
+              <input className="login-input" type="password" placeholder="Spaltažodis"/>
+              <input className="login-input" type="password" placeholder="Patvirtinti slaptažodį"/>
+              <Link className="login-button" to="/dashboard">Registruotis į Dashboard</Link>
             </form>
             <p>
-              <Link className="login-link" to="/login">Back to Log in page</Link>
+              <Link className="login-bottom-text" to="/login">Atgal į Prisijungimo puslapį</Link>
             </p>
           </div>
         </section>

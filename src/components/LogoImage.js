@@ -1,5 +1,5 @@
 import React from 'react';
-import imgPath from '../images/CarPlogo.png';
+import imgPath from '../images/CarPLogo4.png';
 
 const LogoImage = () => {
   return (
