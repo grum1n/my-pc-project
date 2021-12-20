@@ -6,6 +6,7 @@ import Login from './webFrontSide/pages/Login';
 import Register from './webFrontSide/pages/Register';
 import DashboardHome from './webBackSide/pages/DashboardHome';
 import Team from './webBackSide/pages/Team';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/dashboard" element={<DashboardHome />} />
         <Route path="/team" element={<Team />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
