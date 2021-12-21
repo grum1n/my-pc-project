@@ -1,6 +1,7 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import './contact.css';
 
 const Contact = () => {
@@ -36,6 +37,7 @@ const Contact = () => {
             </li>
           </ul>
       </main>
+      <Footer />
     </>
   );
 };

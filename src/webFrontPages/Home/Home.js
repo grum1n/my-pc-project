@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import SearchInput from '../../components/SearchInput';
 import CarParts from '../../webBackSide/CarpartsList.js/CarParts';
 
@@ -20,6 +21,7 @@ const Home = () => {
           <CarParts />
         </section>
       </main>
+      <Footer />
     </>
   );
 };
