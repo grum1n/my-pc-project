@@ -2,13 +2,13 @@ import React from 'react';
 import './styles/frontStyle.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './webFrontPages/Home/Home';
+import About from './webFrontPages/About/About';
+import Companies from './webFrontPages/Companies';
+import Contact from './webFrontPages/Contacts/Contact';
 import Login from './webFrontPages/Login/Login';
 import Register from './webFrontPages/Register/Register';
 import DashboardHome from './webBackSide/pages/DashboardHome';
 import Team from './webBackSide/pages/Team';
-import About from './webFrontPages/About/About';
-import Lauzynai from './webFrontPages/Lauzynai/Lauzynai';
-import Contact from './webFrontPages/Contacts/Contact';
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/lauzynai' element={<Lauzynai />} />
+        <Route path='/companies' element={<Companies />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />

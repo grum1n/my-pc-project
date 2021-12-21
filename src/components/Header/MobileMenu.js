@@ -18,7 +18,7 @@ export const MobileMenu = [
   },
   {
     title: 'Laužynai',
-    path: '/lauzynai',
+    path: '/companies',
     icon: <FaIcons.FaStore />,
     cName: 'nav-text'
   },

@@ -1,0 +1,60 @@
+.companies-info{
+    padding: 20px 0;
+    border-bottom:1px solid  var(--tate-olive);
+    display: flex;
+    justify-content: space-between;
+}
+.companies-info-div{
+    padding-left: 50px;
+    width: 100%;
+}
+.companies-info p{
+    padding-bottom: 5px;
+}
+.companies-info > h3, .companies-icons{
+    color: var(--orange);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin-right: 20px;
+}
+.companies-name{
+    color: var(--dark-blue);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.25em;
+    padding-bottom: 10px;
+}
+.companies-adress{
+    color: var(--dark-blue);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.125em;
+}
+.search-parts{
+    width: 300px;
+}
+.search-parts h4{
+    margin: 0;
+    text-align: right;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.search-parts a{
+    display: block;
+    border:none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875em;
+    color: var(--dark-blue);
+    background-color: var(--orange);
+    padding: 8px 20px 8px 30px;
+    cursor: pointer;
+}
+
+.search-parts a:hover {
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
