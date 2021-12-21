@@ -40,17 +40,17 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/about'>
                                 Apie mus
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/lauzynai'>
                                 Laužynai
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/contact'>
                                 Kontaktai
                             </Link>
                         </li>
@@ -64,7 +64,7 @@ const Header = () => {
                 <nav className={mobileMenu ? 'nav-menu active' : 'nav-menu'}>
                     <ul className='nav-menu-item' onClick={showMobileMenu}>
                         <li className='navbar-toggle'>
-                            <Link to="#" className='menu-bars'>
+                            <Link to='#' className='menu-bars'>
                                 <AiIcons.AiOutlineClose />
                             </Link>
                         </li>

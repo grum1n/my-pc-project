@@ -13,19 +13,19 @@ const DashBoardSidebar = () => {
   return (
         <>
             <IconContext.Provider value={{ color: '#fff' }} >
-                <header className="dashboard-header">
+                <header className='dashboard-header'>
                     <nav className='flex-between'>
                         <div className='flex-container'>
-                            <Link to="/dashboard">
+                            <Link to='/dashboard'>
                                 <DashboardLogo />
                             </Link>
-                            <Link to="#" className="dashboard-menu-bars">
+                            <Link to='#' className='dashboard-menu-bars'>
                                 <FaIcons.FaBars onClick={showSidebar} />
                             </Link>
                         </div>
                         <ul className='flex-container'>
                             <li>
-                                <Link className="logout-button" to="/login">
+                                <Link className='logout-button' to='/login'>
                                     Atsijungti
                                 </Link>
                             </li>
@@ -35,7 +35,7 @@ const DashBoardSidebar = () => {
                 <nav className={sidebar ? 'dashboard-nav-menu active' : 'dashboard-nav-menu'}>
                     <ul className='dashboard-nav-menu-item' onClick={showSidebar}>
                         <li className='dashboard-navbar-toggle'>
-                            <Link to="#" className='dashboard-menu-bars'>
+                            <Link to='#' className='dashboard-menu-bars'>
                                 <AiIcons.AiOutlineClose />
                             </Link>
                         </li>

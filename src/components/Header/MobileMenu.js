@@ -12,7 +12,7 @@ export const MobileMenu = [
   },
   {
     title: 'Apie Mus',
-    path: '/apiemus',
+    path: '/about',
     icon: <IoIcons.IoMdPeople />,
     cName: 'nav-text'
   },
@@ -24,7 +24,7 @@ export const MobileMenu = [
   },
   {
     title: 'Kontaktai',
-    path: '/kontaktai',
+    path: '/contact',
     icon: <FaIcons.FaAddressCard />,
     cName: 'nav-text'
   },
@@ -32,12 +32,6 @@ export const MobileMenu = [
     title: 'Prisijungti',
     path: '/login',
     icon: <FaIcons.FaUserLock />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
   }
 ];

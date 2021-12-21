@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className="frontSide-main">
-        <section className="hero">
+      <main className='frontSide-main'>
+        <section className='hero'>
           <h2>
             Naudotos automobilių dalys internetu
           </h2>
@@ -16,7 +16,7 @@ const Home = () => {
             <SearchInput />
           </div>
         </section>
-        <section className="container">
+        <section className='container'>
           <CarParts />
         </section>
       </main>
