@@ -70,3 +70,17 @@
 .contact-form-button:hover{
     background-color: var(--dark-gray);
 }
+
+@media screen and (max-width: 750px) {
+    .contact-box{
+        padding: 50px;
+        text-align: center;
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        'col-1'
+        'col-2'
+    }
+}
