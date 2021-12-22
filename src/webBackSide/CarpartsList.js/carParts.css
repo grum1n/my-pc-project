@@ -1,0 +1,33 @@
+.parts-list{
+    padding: 20px;
+}
+.part-container{
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom:1px solid  var(--tate-olive);
+}
+.part-container-photo{
+    background-color: var(--tate-olive);
+    width: 200px;
+    height: 150px;
+}
+.part-container-date{
+    padding: 3px 10px;
+    background-color: var(--white);
+    border: 1px solid var(--tate-olive);
+}
+.part-container-price{
+    background-color: var(--orange);
+    padding: 20px;
+    width: 150px;
+}
+.part-container-info{
+    width: 100%;
+    padding: 10px 20px;
+}
+.part-name{
+    color: var(--dark-gray);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+

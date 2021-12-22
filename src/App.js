@@ -7,7 +7,7 @@ import Companies from './webFrontPages/Companies';
 import Contact from './webFrontPages/Contacts/Contact';
 import Login from './webFrontPages/Login/Login';
 import Register from './webFrontPages/Register/Register';
-import DashboardHome from './webBackSide/pages/DashboardHome';
+import Dashboard from './webBackSide/pages/DashboardHome';
 import Team from './webBackSide/pages/Team';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
-        <Route path='/dashboard' element={<DashboardHome />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/team' element={<Team />} />
       </Routes>
     </BrowserRouter>

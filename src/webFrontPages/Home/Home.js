@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SearchInput from '../../components/SearchInput';
+// import TestCarParts from '../../webBackSide/CarpartsList.js/TestCarParts';
 import CarParts from '../../webBackSide/CarpartsList.js/CarParts';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         </section>
         <section className='container'>
           <CarParts />
+          {/* <TestCarParts /> */}
         </section>
       </main>
       <Footer />

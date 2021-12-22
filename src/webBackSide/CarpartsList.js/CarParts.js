@@ -1,33 +1,43 @@
-import React from 'react';
-import { data } from './PartsData';
+import React, { useEffect, useState } from 'react';
+import { db } from '../../server/firebase-config';
+import { collection, getDocs } from 'firebase/firestore';
+import './carParts.css';
 
 const CarParts = () => {
-  const date = new Date();
+  const [partsData, setPartsData] = useState([]);
+  const carPartsCollectionRef = collection(db, 'partsData');
+
+  useEffect(() => {
+    const detCarParts = async () => {
+      const data = await getDocs(carPartsCollectionRef);
+      setPartsData(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+    detCarParts();
+  });
+
   return (
-     <>
-      {
-        data.map((item) => {
+    <>
+    <ul className='parts-list'>
+        {partsData.map((part) => {
           return (
             <>
-            <ul className='car-part-box'>
-              <li className='car-part-photo-box'>
-                <div className='col-1 photo-box' >
-                  <span className='item-date'>{date.getFullYear()}</span>
-                </div>
-              </li>
-              <li className='car-part-info'>
-                <h3 className='col-2 carPart'>{item.carPart}</h3>
-                <p className='col-3 carTitle'>Markė : {item.carTitle}</p>
-                <p className='col-4 carPartcode'>Detalės kodas : {item.carPartcode}</p>
-                <p className='col-4 partID'>sandėlio nr.: {item.partID}</p>
-                <p className='col-4 carPartPrice'>Kaina : {item.carPartPrice}</p>
-              </li>
-            </ul>
+            <li className='part-container flex-between'>
+              <div className='part-container-photo'><span className='part-container-date'>data 2021</span></div>
+              <div className='part-container-info'>
+                <h3 className='part-name'>{part.carPart}</h3>
+                <p>{part.carTitle}</p>
+                <p>Detalės  ar gamintojo kodas : {part.carPartcode}</p>
+               <p>{part.partID}</p>
+              </div>
+              <div className='part-container-price flex-alignitem-center'>
+                <p>Price: {part.carPartPrice}</p>
+              </div>
+            </li>
             </>
           );
-        })
-      }
-     </>
+        })}
+    </ul>
+    </>
   );
 };
 
