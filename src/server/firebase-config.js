@@ -4,12 +4,12 @@ import { getFirestore } from '@firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyB4QS2dEnA7G9pcxDESI_pgUBdeZnOsRio',
-  authDomain: 'carp-ea756.firebaseapp.com',
-  projectId: 'carp-ea756',
-  storageBucket: 'carp-ea756.appspot.com',
-  messagingSenderId: '310051836065',
-  appId: '1:310051836065:web:a8eb21e8ecf540aea4a0e0'
+  apiKey: 'AIzaSyDwGE2hGEAmIQUiACER3Jy5UHNXHydfeeI',
+  authDomain: 'carp-656de.firebaseapp.com',
+  projectId: 'carp-656de',
+  storageBucket: 'carp-656de.appspot.com',
+  messagingSenderId: '185414564622',
+  appId: '1:185414564622:web:1abb58b48d92299590355f'
 };
 
 const app = initializeApp(firebaseConfig);
