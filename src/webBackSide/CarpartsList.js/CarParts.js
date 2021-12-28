@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../../server/firebase-config';
 import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import './carParts.css';
+import { Link } from 'react-router-dom';
 
 const CarParts = () => {
   const [partsData, setPartsData] = useState([]);
@@ -33,6 +34,7 @@ const CarParts = () => {
                 <p>{part.carTitle}</p>
                 <p>Detalės  ar gamintojo kodas : {part.carPartcode}</p>
                 <p>{part.partID}</p>
+                <Link to={`/partdetails/${part.id}`}>Link to part </Link>
                 <p><button onClick={() => { deleteCarPart(part.id); }}>Delete Car part</button></p>
               </div>
               <div className='part-container-price flex-alignitem-center'>

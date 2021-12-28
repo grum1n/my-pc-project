@@ -20,7 +20,6 @@ const Home = () => {
         </section>
         <section className='container'>
           <CarParts />
-          {/* <TestCarParts /> */}
         </section>
       </main>
       <Footer />
