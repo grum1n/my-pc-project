@@ -1,8 +1,8 @@
 import React from 'react';
 import './companies.css';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { CompaniesData } from '../../webBackSide/CompaniesList.js/CompaniesData';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import { CompaniesData } from '../../../components/CompaniesList.js/CompaniesData';
 import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 

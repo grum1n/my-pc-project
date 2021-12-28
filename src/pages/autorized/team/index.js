@@ -1,5 +1,5 @@
 import React from 'react';
-import DashBoardSidebar from '../../components/DashBoardSidebar';
+import DashBoardSidebar from '../../../components/DashBoardSidebar';
 
 const Team = () => {
   return (

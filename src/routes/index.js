@@ -1,6 +1,6 @@
 export const ROUTES = {
   DEFAULT: '/',
-  CAR_PART_DETAILS: '/partdetails/:id',
+  // CAR_PART_DETAILS: '/partdetails/:id',
   ABOUT: '/about',
   COMPANIES: '/companies',
   CONTACT: '/contact',

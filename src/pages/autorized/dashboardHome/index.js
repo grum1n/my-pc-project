@@ -1,7 +1,7 @@
 import React from 'react';
 import DashBoardSidebar from '../../../components/DashBoardSidebar';
-import CarParts from '../../CarpartsList.js/CarParts';
-import Addpart from '../AddCarPart/Addpart';
+import CarParts from '../../../components/CarpartsList.js/CarParts';
+import Addpart from '../addCarPart';
 import './dashboardHome.css';
 
 const Dashboard = () => {
