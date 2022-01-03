@@ -6,7 +6,7 @@ import partner3 from '../../images/partner3.png';
 import partner4 from '../../images/partner4.png';
 import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { MobileMenu } from '../Header/MobileMenu';
+import { Menu } from '../Header/Menu';
 
 function Footer () {
   const date = new Date();
@@ -29,7 +29,7 @@ function Footer () {
              </li>
              <li className='footer-meniu-box'>
              <h3>Meniu</h3>
-             {MobileMenu.map((item, index) => {
+             {Menu.map((item, index) => {
                return (
                  <div key={index}>
                      <Link to={item.path} className='footer-menu-links'>

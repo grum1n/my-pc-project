@@ -4,14 +4,14 @@ import LogoImage from '../LogoImage';
 import './header.css';
 import * as FaIcons from 'react-icons/fa';
 import { IconContext } from 'react-icons';
-import { MobileMenu } from './MobileMenu';
+import { Menu } from './Menu';
 
 export default function Header () {
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [menu, setMenu] = useState(false);
   const [header, setHeader] = useState();
 
-  const showMobileMenu = () => setMobileMenu(!mobileMenu);
-  const closeMobileMenu = () => setMobileMenu(false);
+  const showMobileMenu = () => setMenu(!menu);
+  const closeMobileMenu = () => setMenu(false);
 
   const changeHeaderBg = () => {
     if (window.scrollY >= 80) {
@@ -30,13 +30,13 @@ export default function Header () {
                         <LogoImage />
                     </Link>
                     <Link to='#' className='menu-icon' onClick={showMobileMenu}>
-                        {mobileMenu ? <FaIcons.FaTimes /> : <FaIcons.FaBars /> }
+                        {menu ? <FaIcons.FaTimes /> : <FaIcons.FaBars /> }
                     </Link>
                     <ul className='navigation flex-container'>
-                        {MobileMenu.map((item, index) => {
+                        {Menu.map((item, index) => {
                           return (
-                                <li key={index} className={item.cName}>
-                                    <Link to={item.path} onClick={closeMobileMenu} className='mobile-links-space'>
+                                <li key={index} className={item.style}>
+                                    <Link to={item.path} onClick={closeMobileMenu}>
 
                                         <span>{item.title}</span>
                                     </Link>
@@ -45,9 +45,9 @@ export default function Header () {
                         })}
                     </ul>
                 </nav>
-                <nav className={mobileMenu ? 'nav-menu active' : 'nav-menu'}>
+                <nav className={menu ? 'nav-menu active' : 'nav-menu'}>
                     <ul className='nav-menu-item' onClick={showMobileMenu}>
-                        {MobileMenu.map((item, index) => {
+                        {Menu.map((item, index) => {
                           return (
                             <li key={index} className={item.cName}>
                                 <Link to={item.path} onClick={closeMobileMenu} className='mobile-links-space'>
