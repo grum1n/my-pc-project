@@ -1,4 +1,34 @@
+Ernesto patarimai 2021.12.28 :
+Kodas:
 
+OK - Siūlyčiau route'us (kaip pvz '/about') apsibrėžti atskirai kaip konstantas ir naudoti, kad nebūtų hardcode.  
+
+OK - Folderių pavadinimai: webBackSide, webFronPages. Pavadinimai šiek tiek apgauna, nes atrodo kad bus 
+    back ir front kodas, nors visur yra front. Web žodelis čia nereikalingas nes ir taip esame web projekte
+    + pavadinimai yra incosistent nes vienas su pages kitas be. Siūlyčiau dėti viską į pages folderį ir jame 
+    turėti 2 folderius, public kas reikštų psulapiai kur visi vartotojai gali peržiūrėti ir kitas gali būti
+    autorized kur gali tik prisijungę, ateityje dar galėtų būti admin kur tik administratorius galės pasiekti.
+
+OK (PAKOREGUOSIU dar veliau)- frontStyle.css -> daug dalykų sukišta į vieną failą reiktų paskaidyti tiems komponentas kurių stilius ten yra.
+
+
+- Page'uose kartojasi Header, Footer ir   <main className='frontSide-main'><section className='hero'> reiktų
+    neduplikuoti kad kieviename page jie būtų, tą galima pasiekti juos iškeliant į app.js
+
+
+
+
+
+- onChange={(event) => { setCarTitle(event.target.value); } } čia nereikia perduoti event.target.value, galima tiesiog
+    onChange={setCarTitle}, event.target.value pasiimsi setCarTitle funkcijoje.
+- const [carTitle, setCarTitle] = useState('');
+  const [carPart, setCarPart] = useState('');
+  const [carPartCode, setCarPartCode] = useState('');
+  const [carPartPrice, setCarPartPrice] = useState(0); 
+    -> Čia viskas yra pie car, būtų logiška naudoti vieną state vietoj 4, ir ten laikyti car objektą.
+- CompaniesData, PartsData yra ne tame folderyje, tokiems duomenims galima pakurti naują folderį /src direktorijoje ir 
+    pavadinti fakeData, MockedData ar kaip nori ir ten laikyti.
+- detCarParts -> čia turbūt typo.
 
 ****************************************
 # server 

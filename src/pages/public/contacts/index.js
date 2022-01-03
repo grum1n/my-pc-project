@@ -1,14 +1,10 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import './contact.css';
 
 const Contact = () => {
   return (
     <>
-      <Header />
-      <main className='frontSide-main'>
           <section className='hero'>
           <h2>
               Kontaktai
@@ -36,8 +32,6 @@ const Contact = () => {
               </form>
             </li>
           </ul>
-      </main>
-      <Footer />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { ROUTES } from '.';
 import Home from '../pages/public/home';
 import About from '../pages/public/about';
@@ -10,9 +10,8 @@ import Register from '../pages/public/register';
 import Dashboard from '../pages/autorized/dashboardHome';
 import Team from '../pages/autorized/team';
 
-const router = () => {
+function Router () {
   return (
-    <BrowserRouter>
         <Routes>
           <Route path={ROUTES.DEFAULT} element={<Home />} />
           <Route path={ROUTES.ABOUT} element={<About />} />
@@ -23,8 +22,7 @@ const router = () => {
           <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
           <Route path={ROUTES.TEAM} element={<Team />} />
         </Routes>
-    </BrowserRouter>
   );
-};
+}
 
-export default router;
+export default Router;

@@ -1,7 +1,5 @@
 import React from 'react';
 import './companies.css';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import { CompaniesData } from '../../../components/CompaniesList.js/CompaniesData';
 import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -9,8 +7,6 @@ import { Link } from 'react-router-dom';
 const Companies = () => {
   return (
     <>
-        <Header />
-        <main className='frontSide-main'>
             <section className='hero'>
             <h2>
                 Laužynai
@@ -41,8 +37,6 @@ const Companies = () => {
                 }
               </ul>
             </div>
-        </main>
-        <Footer />
     </>
   );
 };

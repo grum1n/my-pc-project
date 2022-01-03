@@ -1,13 +1,10 @@
 import React from 'react';
+import './register.css';
 import { Link } from 'react-router-dom';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 
 const Register = () => {
   return (
     <>
-      <Header />
-      <main className='frontSide-main'>
         <section className='hero'>
           <div className='container login-form-box'>
             <form className='flex-column form-box'>
@@ -23,8 +20,6 @@ const Register = () => {
             </p>
           </div>
         </section>
-      </main>
-      <Footer />
     </>
   );
 };

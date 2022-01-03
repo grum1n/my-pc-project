@@ -4,10 +4,9 @@ import LogoImage from '../LogoImage';
 import './header.css';
 import * as FaIcons from 'react-icons/fa';
 import { IconContext } from 'react-icons';
-import * as AiIcons from 'react-icons/ai';
 import { MobileMenu } from './MobileMenu';
 
-const Header = () => {
+export default function Header () {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [header, setHeader] = useState();
 
@@ -30,48 +29,28 @@ const Header = () => {
                     <Link to='/' onClick={closeMobileMenu}>
                         <LogoImage />
                     </Link>
-                        <Link to='#' className='menu-icon'>
-                            <FaIcons.FaBars onClick={showMobileMenu} />
-                        </Link>
+                    <Link to='#' className='menu-icon' onClick={showMobileMenu}>
+                        {mobileMenu ? <FaIcons.FaTimes /> : <FaIcons.FaBars /> }
+                    </Link>
                     <ul className='navigation flex-container'>
-                        <li>
-                            <Link to='/'>
-                                Pagrindinis
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/about'>
-                                Apie mus
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/companies'>
-                                Laužynai
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/contact'>
-                                Kontaktai
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/login' className='active'>
-                                Prisijungti
-                            </Link>
-                        </li>
+                        {MobileMenu.map((item, index) => {
+                          return (
+                                <li key={index} className={item.cName}>
+                                    <Link to={item.path} onClick={closeMobileMenu} className='mobile-links-space'>
+
+                                        <span>{item.title}</span>
+                                    </Link>
+                                </li>
+                          );
+                        })}
                     </ul>
                 </nav>
                 <nav className={mobileMenu ? 'nav-menu active' : 'nav-menu'}>
                     <ul className='nav-menu-item' onClick={showMobileMenu}>
-                        <li className='navbar-toggle'>
-                            <Link to='#' className='menu-bars'>
-                                <AiIcons.AiOutlineClose />
-                            </Link>
-                        </li>
                         {MobileMenu.map((item, index) => {
                           return (
                             <li key={index} className={item.cName}>
-                                <Link to={item.path} onClick={closeMobileMenu}>
+                                <Link to={item.path} onClick={closeMobileMenu} className='mobile-links-space'>
                                     {item.icon}
                                     <span>{item.title}</span>
                                 </Link>
@@ -83,6 +62,4 @@ const Header = () => {
             </IconContext.Provider>
         </header>
   );
-};
-
-export default Header;
+}

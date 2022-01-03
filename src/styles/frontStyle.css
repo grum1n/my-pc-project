@@ -60,10 +60,12 @@ img{
 :-ms-input-placeholder { color:var(--dark-gray);}/* Internet Explorer 10-11 */
 ::-ms-input-placeholder { color: var(--dark-gray);}/* Microsoft Edge */
 
-/*Hero*/
+/*Main*/
 .frontSide-main{
   background-color: var(--white);
 }
+
+/*Hero*/
 .hero{
   width: 100%;
   padding: 150px 0;
@@ -149,55 +151,8 @@ h2{
   font-weight: 500;
   line-height: 1.50rem;
 }
-
-/*Login page*/
-.login-form-box{
-  margin-top: 50px;
-  max-width: 500px;
-  padding: 30px;
-  align-items: center;
-  border: 1px solid var(--dark-gray);
-  border-radius: 5px;
-  box-shadow: 0px 8px 16px 0px var(--dark-gray);
-}
-.login-input{
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 30px;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #000000;
-  border-radius: 5px;
-  border: 1px solid var(--dark-gray);
-}
-.login-button{
-  text-align: center;
-  width: 100%;
-  padding: 15px;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: var(--white);
-  border-radius: 5px;
-  border:none;
-  background-color: var(--light-gray);
-  cursor: pointer;
-}
-.login-button:hover{
-  color: var(--white);
-  background-color: var(--dark-gray);
-}
-.login-bottom-text {
-  color: var(--white);
-  display: block;
-  margin-top: 30px;
-  text-align: right;
-  text-decoration: underline;
-}
-.login-bottom-text:hover {
-  color: var(--dark-gray);
-}
-/*Register page*/
-.register-form-title{
-  color: var(--dark-blue);
-  padding: 30px 0;
+@media screen and (max-width: 1000px) {
+  .navigation{
+      display: none;
+  }
 }

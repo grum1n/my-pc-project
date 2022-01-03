@@ -1,13 +1,9 @@
 import React from 'react';
-import Footer from '../../../components/Footer';
-import Header from '../../../components/Header';
 import './about.css';
 
 const About = () => {
   return (
     <>
-        <Header />
-        <main className='frontSide-main'>
             <div className='hero'>
             <h2>
                 Apie mus
@@ -38,7 +34,6 @@ const About = () => {
                     <p>Sukurti patogią naudotų automobilių detalių sandėliavimo platformą</p>
                 </div>
             </div>
-        </main>
         <section className='stats-container'>
             <ul className='container flex-around'>
                 <li>
@@ -59,7 +54,6 @@ const About = () => {
                 </li>
             </ul>
         </section>
-        <Footer />
     </>
   );
 };
