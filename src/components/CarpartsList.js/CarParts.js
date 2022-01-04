@@ -24,10 +24,9 @@ const CarParts = () => {
   return (
     <>
     <ul className='parts-list'>
-        {partsData.map((part) => {
+        {partsData.map((part, index) => {
           return (
-            <>
-            <li className='part-container flex-between'>
+            <li className='part-container flex-between' key={index}>
               <div className='part-container-photo'><span className='part-container-date'>data 2021</span></div>
               <div className='part-container-info'>
                 <h3 className='part-name'>{part.carPart}</h3>
@@ -41,7 +40,6 @@ const CarParts = () => {
                 <p>Price: {part.carPartPrice}</p>
               </div>
             </li>
-            </>
           );
         })}
     </ul>

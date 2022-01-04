@@ -1,15 +1,12 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
+import Hero from '../../../components/Hero';
 import './contact.css';
 
 const Contact = () => {
   return (
     <>
-          <section className='hero'>
-          <h2>
-              Kontaktai
-          </h2>
-          </section>
+      <Hero heading='Kontaktai' />
           <ul className='container contact-box'>
             <li className='contact-li-boxes'>
             <p className=''><FaIcons.FaMapMarkedAlt className='contact-icons'/> Kaunas, Laisvės alėja</p>

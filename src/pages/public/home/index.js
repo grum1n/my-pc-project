@@ -1,21 +1,17 @@
 import React from 'react';
-import './home.css';
+import HeroSearch from '../../../components/HeroSearch';
 import CarParts from '../../../components/CarpartsList.js/CarParts';
 
-export default function Home () {
+function Home() {
   return (
     <>
-      <section className='hero'>
-        <h2>
-          Naudotos automobilių dalys internetu
-        </h2>
-          {/* <div className='container'>
-            <SearchInput />
-          </div> */}
-      </section>
+      <HeroSearch heading='Naudotos automobilių detalės' />
       <section className='container'>
         <CarParts />
       </section>
     </>
-  );
+  )
 }
+ 
+export default Home;
+ 

@@ -5,8 +5,8 @@
         "node": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "standard"
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -19,8 +19,9 @@
         "react"
     ],
     "rules": {
-        "semi": [2, "always"],
+        "semi": [0, "always"],
         "no-console": [1],
-        "jsx-quotes": [2, "prefer-single"]
+        "jsx-quotes": [2, "prefer-single"],
+        "react/prop-types": ["off"]
     }
 }

@@ -3,15 +3,12 @@ import './companies.css';
 import { CompaniesData } from '../../../components/CompaniesList.js/CompaniesData';
 import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Hero from '../../../components/Hero';
 
 const Companies = () => {
   return (
     <>
-            <section className='hero'>
-            <h2>
-                Laužynai
-            </h2>
-            </section>
+      <Hero heading='Laužynai' />
             <div className='container'>
               <ul>
                 {CompaniesData.map((companie) => {

@@ -1,14 +1,11 @@
 import React from 'react';
+import Hero from '../../../components/Hero';
 import './about.css';
 
 const About = () => {
   return (
     <>
-            <div className='hero'>
-            <h2>
-                Apie mus
-            </h2>
-            </div>
+        <Hero heading='Apie mus' />
             <div className='container about-grid'>
                 <div className='col-1'>img</div>
                 <div className='col-2'>
