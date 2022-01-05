@@ -27,17 +27,17 @@ const CarParts = () => {
         {partsData.map((part, index) => {
           return (
             <li className='part-container flex-between' key={index}>
-              <div className='part-container-photo'><span className='part-container-date'>data 2021</span></div>
+              <div className='part-container-photo'><span className='part-container-date'>2021</span></div>
               <div className='part-container-info'>
                 <h3 className='part-name'>{part.carPart}</h3>
                 <p>{part.carTitle}</p>
-                <p>Detalės  ar gamintojo kodas : {part.carPartcode}</p>
+                <p>Detalės ar gamintojo kodas : {part.carPartcode}</p>
                 <p>{part.partID}</p>
                 <Link to={`/partdetails/${part.id}`}>Link to part </Link>
                 <p><button onClick={() => { deleteCarPart(part.id); }}>Delete Car part</button></p>
               </div>
               <div className='part-container-price flex-alignitem-center'>
-                <p>Price: {part.carPartPrice}</p>
+                <p>Kaina: {part.carPartPrice}</p>
               </div>
             </li>
           );
