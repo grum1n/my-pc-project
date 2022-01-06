@@ -1,0 +1,7 @@
+/*Dashboard-main*/
+.dashboard-main{
+    background-color: var(--white);/*temporarily*/
+    color: var(--dark-gray);
+    height: 100vh;
+    padding: 200px 300px;
+}

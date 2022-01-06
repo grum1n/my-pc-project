@@ -1,5 +1,6 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
+import Footer from '../../../components/Footer';
 import Hero from '../../../components/Hero';
 import './contact.css';
 
@@ -29,6 +30,7 @@ const Contact = () => {
               </form>
             </li>
           </ul>
+          <Footer />
     </>
   );
 };

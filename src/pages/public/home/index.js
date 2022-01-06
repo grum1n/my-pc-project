@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroSearch from '../../../components/HeroSearch';
 import CarParts from '../../../components/CarpartsList.js/CarParts';
+import Footer from '../../../components/Footer';
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <section className='container'>
         <CarParts />
       </section>
+      <Footer />
     </>
   )
 }

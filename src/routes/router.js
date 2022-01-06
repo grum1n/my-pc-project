@@ -7,8 +7,8 @@ import Companies from '../pages/public/companies';
 import Contact from '../pages/public/contacts';
 import Login from '../pages/public/login';
 import Register from '../pages/public/register';
-import Dashboard from '../pages/autorized/dashboardHome';
 import Team from '../pages/autorized/team';
+import DashboardHome from '../pages/autorized/DashboardHome';
 
 function Router () {
   return (
@@ -19,7 +19,7 @@ function Router () {
           <Route path={ROUTES.CONTACT} element={<Contact />} />
           <Route path={ROUTES.LOGIN} element={<Login />} />
           <Route path={ROUTES.REGISTER} element={<Register />} />
-          <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
+          <Route path={ROUTES.DASHBOARD_HOME} element={<DashboardHome />} />
           <Route path={ROUTES.TEAM} element={<Team />} />
         </Routes>
   );

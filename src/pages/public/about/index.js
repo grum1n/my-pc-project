@@ -6,11 +6,12 @@ import PictureA from '../../../images/sandelys.jpg';
 import PictureB from '../../../images/pc.jpg';
 import PictureC from '../../../images/ardomiauto2.jpg';
 import PictureD from '../../../images/carpWeb.jpg';
+import Footer from '../../../components/Footer';
 
 const About = () => {
   return (
     <>
-        <Hero heading='Apie mus' />
+        <Hero heading='Apie mus' tetst='alio'/>
             <div className='container about-grid'>
                 <div className='col-1'>
                     <Image url={PictureA} title='Sandėlys' cName='img-sandelys'/>
@@ -63,6 +64,7 @@ const About = () => {
                 </li>
             </ul>
         </section>
+        <Footer />
     </>
   );
 };

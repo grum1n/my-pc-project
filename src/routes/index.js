@@ -6,6 +6,7 @@ export const ROUTES = {
   CONTACT: '/contact',
   LOGIN: '/login',
   REGISTER: '/register',
-  DASHBOARD: '/dashboard',
+  DASHBOARD_HOME: '/dashboard_home',
+  DASHBOARD_CAR_PARTS: '/s',
   TEAM: '/team'
 };

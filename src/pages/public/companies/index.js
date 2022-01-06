@@ -4,6 +4,7 @@ import { CompaniesData } from '../../../components/CompaniesList.js/CompaniesDat
 import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
+import Footer from '../../../components/Footer';
 
 const Companies = () => {
   return (
@@ -34,6 +35,7 @@ const Companies = () => {
                 }
               </ul>
             </div>
+            <Footer />
     </>
   );
 };

@@ -1,12 +1,13 @@
 import React from 'react';
 import './login.css';
 import { Link } from 'react-router-dom';
+import Footer from '../../../components/Footer';
 
 const Login = () => {
   return (
     <>
       <section className='hero'>
-        <div className='container'>
+        <div className='container flex-center'>
           <form className='flex-column login-form-box'>
             <input className='login-input' type='text' placeholder='Email' />
             <input className='login-input' type='password' placeholder='Slaptažodis'/>
@@ -17,6 +18,7 @@ const Login = () => {
           </form>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
