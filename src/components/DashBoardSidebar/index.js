@@ -25,9 +25,10 @@ const DashBoardSidebar = () => {
                         </div>
                         <ul className='flex-container'>
                             <li>
-                                <Link className='logout-button' to='/login'>
+                                log out button
+                                {/* <Link className='logout-button' to='/login'>
                                     Atsijungti
-                                </Link>
+                                </Link> */}
                             </li>
                         </ul>
                     </nav>

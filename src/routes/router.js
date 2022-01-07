@@ -9,9 +9,13 @@ import Login from '../pages/public/login';
 import Register from '../pages/public/register';
 import Team from '../pages/autorized/team';
 import DashboardHome from '../pages/autorized/DashboardHome';
+import ProtectedRoute from './ProtectedRoute';
+import { UserAuthContextProvider } from '../context/UserAuthContext';
 
 function Router () {
   return (
+    <>
+      <UserAuthContextProvider>
         <Routes>
           <Route path={ROUTES.DEFAULT} element={<Home />} />
           <Route path={ROUTES.ABOUT} element={<About />} />
@@ -19,9 +23,20 @@ function Router () {
           <Route path={ROUTES.CONTACT} element={<Contact />} />
           <Route path={ROUTES.LOGIN} element={<Login />} />
           <Route path={ROUTES.REGISTER} element={<Register />} />
-          <Route path={ROUTES.DASHBOARD_HOME} element={<DashboardHome />} />
-          <Route path={ROUTES.TEAM} element={<Team />} />
+          <Route path={ROUTES.DASHBOARD_HOME} element={
+            <ProtectedRoute>
+              <DashboardHome />
+            </ProtectedRoute>
+          } />
+          <Route path={ROUTES.TEAM} element={
+            <ProtectedRoute>
+              <Team />
+            </ProtectedRoute>
+          } />
         </Routes>
+      </UserAuthContextProvider>
+    </>
+        
   );
 }
 

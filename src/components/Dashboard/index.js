@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './dashboard.css';
 
 function Dashboard({ children }) {
     return (
-        <main>
+        <main className='dashboard'>
             {children}
         </main>
     )
