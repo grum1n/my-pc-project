@@ -3,6 +3,7 @@ import './dashboardHome.css';
 import Dashboard from '../../../components/Dashboard';
 import { useUserAuth } from '../../../context/UserAuthContext';
 import { useNavigate } from 'react-router-dom';
+import DashBoardSidebar from '../../../components/DashBoardSidebar';
 
 function DashboardHome() {
     const { logOut, user } = useUserAuth();
@@ -17,6 +18,7 @@ function DashboardHome() {
     };
     return (
         <Dashboard>
+           <DashBoardSidebar />
             <h3>Hello , {user && user.email}</h3>
             DashboardHome
             <p>

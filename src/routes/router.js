@@ -17,18 +17,18 @@ function Router () {
     <>
       <UserAuthContextProvider>
         <Routes>
-          <Route path={ROUTES.DEFAULT} element={<Home />} />
-          <Route path={ROUTES.ABOUT} element={<About />} />
-          <Route path={ROUTES.COMPANIES} element={<Companies />} />
-          <Route path={ROUTES.CONTACT} element={<Contact />} />
-          <Route path={ROUTES.LOGIN} element={<Login />} />
-          <Route path={ROUTES.REGISTER} element={<Register />} />
-          <Route path={ROUTES.DASHBOARD_HOME} element={
+          <Route path={ROUTES.PUBLIC_DEFAULT} element={<Home />} />
+          <Route path={ROUTES.PUBLIC_ABOUT} element={<About />} />
+          <Route path={ROUTES.PUBLIC_COMPANIES} element={<Companies />} />
+          <Route path={ROUTES.PUBLIC_CONTACT} element={<Contact />} />
+          <Route path={ROUTES.PUBLIC_LOGIN} element={<Login />} />
+          <Route path={ROUTES.PUBLIC_REGISTER} element={<Register />} />
+          <Route path={ROUTES.AUTORIZED_DASHBOARD_HOME} element={
             <ProtectedRoute>
               <DashboardHome />
             </ProtectedRoute>
           } />
-          <Route path={ROUTES.TEAM} element={
+          <Route path={ROUTES.AUTORIZED_TEAM} element={
             <ProtectedRoute>
               <Team />
             </ProtectedRoute>

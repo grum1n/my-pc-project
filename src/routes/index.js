@@ -1,12 +1,12 @@
 export const ROUTES = {
-  DEFAULT: '/',
-  // CAR_PART_DETAILS: '/partdetails/:id',
-  ABOUT: '/about',
-  COMPANIES: '/companies',
-  CONTACT: '/contact',
-  LOGIN: '/login',
-  REGISTER: '/register',
-  DASHBOARD_HOME: '/dashboard_home',
-  DASHBOARD_CAR_PARTS: '/s',
-  TEAM: '/team'
+  PUBLIC_DEFAULT: '/',
+  // PUBLIC_CAR_PART_DETAILS: '/partdetails/:id',
+  PUBLIC_ABOUT: '/about',
+  PUBLIC_COMPANIES: '/companies',
+  PUBLIC_CONTACT: '/contact',
+  PUBLIC_LOGIN: '/login',
+  PUBLIC_REGISTER: '/register',
+  AUTORIZED_DASHBOARD_HOME: '/autorized/dashboard_home',
+  AUTORIZED_DASHBOARD_CAR_PARTS: '/autorized/s',
+  AUTORIZED_TEAM: '/autorized/team'
 };

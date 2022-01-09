@@ -1,5 +1,3 @@
-testas del git pull
-***
 
 Ernesto patarimai 2021.12.28 :
 Kodas:

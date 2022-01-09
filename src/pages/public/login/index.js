@@ -16,7 +16,7 @@ const Login = () => {
     setError('');
     try {
       await logIn(email, password);
-      navigate('/dashboard_home');
+      navigate('/autorized/dashboard_home');
     } catch (err) {
       // setError(err.message);
     }
