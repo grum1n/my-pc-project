@@ -3,6 +3,7 @@ import './login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../../../components/Footer';
 import { useUserAuth } from '../../../context/UserAuthContext';
+import Header from '../../../components/Header';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -24,6 +25,7 @@ const Login = () => {
 
   return (
     <>
+      <Header />
       <section className='hero'>
         <div className='container flex-center'>
           <form className='flex-column login-form-box' onClick={handleSubmit}>

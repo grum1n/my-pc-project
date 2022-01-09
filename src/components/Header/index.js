@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogoImage from '../LogoImage';
+import ImgLogo from '../../images/CarPlogo.png'
 import './header.css';
 import * as FaIcons from 'react-icons/fa';
 import { IconContext } from 'react-icons';
@@ -27,7 +28,7 @@ export default function Header () {
             <IconContext.Provider value={{ color: '#fff' }} >
                 <nav className='flex-between'>
                     <Link to='/' onClick={closeMobileMenu}>
-                        <LogoImage />
+                    <LogoImage url={ImgLogo} title='logo' cName='logo-style' />
                     </Link>
                     <Link to='#' className='menu-icon' onClick={showMobileMenu}>
                         {menu ? <FaIcons.FaTimes /> : <FaIcons.FaBars /> }

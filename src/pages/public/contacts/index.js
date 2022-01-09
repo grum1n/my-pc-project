@@ -1,12 +1,14 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import Footer from '../../../components/Footer';
+import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import './contact.css';
 
 const Contact = () => {
   return (
     <>
+    <Header />
       <Hero heading='Kontaktai' />
           <ul className='container contact-box'>
             <li className='contact-li-boxes'>

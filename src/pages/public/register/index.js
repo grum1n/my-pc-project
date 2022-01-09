@@ -3,6 +3,7 @@ import './register.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../../../components/Footer';
 import { useUserAuth } from '../../../context/UserAuthContext';
+import Header from '../../../components/Header';
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -24,6 +25,7 @@ const Register = () => {
 
   return (
     <>
+    <Header />
         <section className='hero'>
           <div className='container flex-center'>
             <div className='login-form-box'>

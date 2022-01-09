@@ -2,28 +2,16 @@ import React from 'react';
 import './dashboardHome.css';
 import Dashboard from '../../../components/Dashboard';
 import { useUserAuth } from '../../../context/UserAuthContext';
-import { useNavigate } from 'react-router-dom';
-import DashBoardSidebar from '../../../components/DashBoardSidebar';
+import DashboardContent from '../../../components/DashboardContent';
 
 function DashboardHome() {
-    const { logOut, user } = useUserAuth();
-    const navigate = useNavigate();
-    const handleLogout = async () => {
-      try {
-        await logOut();
-        navigate('/login');
-      } catch (error) {
-      //  {error.message}
-      }
-    };
+    const { user, logOut } = useUserAuth();
+    
     return (
-        <Dashboard>
-           <DashBoardSidebar />
-            <h3>Hello , {user && user.email}</h3>
-            DashboardHome
-            <p>
-                <button variant='primary' onClick={handleLogout}>Log out</button>
-            </p>
+        <Dashboard userEmail={user.email} logOut={logOut}>
+           <DashboardContent>
+                <h1 className='dashboard-home'>Dashboard Home</h1>
+           </DashboardContent>
         </Dashboard>
     )
 }

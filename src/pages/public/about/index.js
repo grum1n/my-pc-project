@@ -7,10 +7,12 @@ import PictureB from '../../../images/pc.jpg';
 import PictureC from '../../../images/ardomiauto2.jpg';
 import PictureD from '../../../images/carpWeb.jpg';
 import Footer from '../../../components/Footer';
+import Header from '../../../components/Header';
 
 const About = () => {
   return (
     <>
+    <Header />
         <Hero heading='Apie mus' tetst='alio'/>
             <div className='container about-grid'>
                 <div className='col-1'>

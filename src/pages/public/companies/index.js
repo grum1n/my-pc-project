@@ -5,10 +5,12 @@ import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
+import Header from '../../../components/Header';
 
 const Companies = () => {
   return (
     <>
+    <Header />
       <Hero heading='Laužynai' />
             <div className='container'>
               <ul>

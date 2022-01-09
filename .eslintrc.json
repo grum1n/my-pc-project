@@ -23,6 +23,6 @@
         "no-console": [1],
         "jsx-quotes": [2, "prefer-single"],
         "react/prop-types": ["off"],
-        "plugin:react/jsx-runtime": "extends"
+        "plugin:react/jsx-runtime": "off"
     }
 }

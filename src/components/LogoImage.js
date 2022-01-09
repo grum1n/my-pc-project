@@ -1,10 +1,10 @@
 import React from 'react';
-import imgPath from '../images/CarPLogo4.png';
 
-const LogoImage = () => {
+
+const LogoImage = (props) => {
   return (
     <>
-        <img src={imgPath} />
+        <img src={props.url} alt={props.title} className={props.cName}/>
     </>
   );
 };
