@@ -1,12 +1,12 @@
+/*dashboard-container*/
 .dashboard-container{
-    background-color: var(--tate-olive);
+    background-image: url(../../images/bgx-o.png);
     color: var(--white);
     width: 100%;
     height: 100vh;
     position: relative;
     display: flex;
 }
-
 /*Dashboard header*/
 .dashboard-header {
     margin: 0;
@@ -26,7 +26,7 @@ a.dashboard-menu-bars {
 }
 a:hover.dashboard-menu-bars {
     font-size: 2rem;
-    color: var(--tate-olive);
+    color: var(--orange);
 }
 .logo-style {margin: 0 10px 0 40px; }
 .dashboard-title{
@@ -46,7 +46,7 @@ a:hover.dashboard-menu-bars {
     overflow-x: hidden;
 }
 .search-wrapper span {
-    color: var(--orange);
+    color: var(--tate-olive);
     display: inline-block;
     margin-top: 5px;
     padding: 0rem 1rem ;
@@ -61,7 +61,6 @@ a:hover.dashboard-menu-bars {
     border: none;
     outline: none;
 }
-
 /*user wrapper*/
 .user-wrapper {
     display: flex;
@@ -76,7 +75,7 @@ a:hover.dashboard-menu-bars {
 .user-wrapper h4{font-weight: 400;color: var(--white);}
 .user-wrapper small {
     display: inline-block;
-    color: var(--orange);
+    color: var(--tate-olive);
     font-weight: 400;
 }
 /*logout button*/
@@ -91,10 +90,10 @@ a:hover.dashboard-menu-bars {
     color: var(--dark-blue);
     border-radius: 30px;
     border:none;
-    background-color: var(--orange);
+    background-image: url(../../images/bgx-o.png);
     cursor: pointer;
 }
-.logout-button:hover{background-color: var(--tate-olive);}
+.logout-button:hover{ background-image: url(../../images/bgx-2.jpg);}
 
 /*sidebar*/
 .sidebar-menu {
@@ -104,7 +103,7 @@ a:hover.dashboard-menu-bars {
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: -100%;
+    left: -10%;
     opacity: 1;
     transition: all 0.5s ease;
     position: fixed;
@@ -112,7 +111,7 @@ a:hover.dashboard-menu-bars {
 } 
 .sidebar-menu.active {
     background-color: var(--dark-gray);
-    left: 0;
+    left: 0px;
     transition: 350ms;
 }
 .sidebar-menu-items {
@@ -124,7 +123,7 @@ a:hover.dashboard-menu-bars {
     padding-left: 1rem;
 }
 .sidebar-links {
-    padding: .8rem 3rem .8rem 2.5rem;
+    padding: .8rem 3rem .8rem 1.1rem;
     text-decoration: none;
     display: block;
     color: var(--white);
@@ -140,21 +139,26 @@ a:hover.dashboard-menu-bars {
     font-size: 1.3rem;
 }
 .sidebar-menu a.active {
-    background-color: var(--orange);
+    background-image: url(../../images/bgx-o.png);
     color: var(--dark-blue);
     padding-top: .8rem;
     padding-bottom: .8rem;
     color: var(--main-color);
     border-radius: 30px 0 0 30px;
 }
-
 .main-content{
     position: absolute;
     left: 300px;  
     transition: all 0.5s ease; 
 }
 .main-content-full{
+    background-image: url(../../images/bgx-o.png);
+    padding-left: 20px;
     position: absolute;
-    left: 50px;  
+    left: 90px;  
     transition: all 0.5s ease; 
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
 }

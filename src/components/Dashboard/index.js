@@ -9,10 +9,10 @@ import userImg from '../../images/profile.jpg';
 import Button from '../Button';
 
 function Dashboard({ userEmail, logOut, children }) {
-    const [sidebar, setSidebar] = useState(true);
+    const [sidebar] = useState(true);
     const [main,setMain] = useState(false);
     const showSidebar = () => {
-        setSidebar(!sidebar);
+        // setSidebar(!sidebar);
         setMain(!main);
     } 
     const navigate = useNavigate();
@@ -27,6 +27,7 @@ function Dashboard({ userEmail, logOut, children }) {
     };
     return (
         <>
+        <div className='dashboard-container'>
         <header className='dashboard-header'>
                 <nav className='flex-between'>
                     <div className='flex-container'>
@@ -36,7 +37,7 @@ function Dashboard({ userEmail, logOut, children }) {
                         <Link to='#' className='dashboard-menu-bars'>
                             <FaIcons.FaBars onClick={showSidebar} />
                         </Link>
-                        <h3 className='dashboard-title'>Dashboard</h3>
+                        {/* <h3 className='dashboard-title'>Dashboard</h3> */}
                     </div>
                     <div className='search-wrapper'>
                         <span className=''><FaIcons.FaSearch /></span>
@@ -57,7 +58,7 @@ function Dashboard({ userEmail, logOut, children }) {
                     </ul>
                 </nav>
             </header>
-        <div className='dashboard-container'>
+        
             <nav className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
                 <ul className='sidebar-menu-items' onClick={showSidebar}>
                     {DashboardLinks.map((item, index) => {
