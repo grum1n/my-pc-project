@@ -7,7 +7,12 @@ import Companies from '../pages/public/companies';
 import Contact from '../pages/public/contacts';
 import Login from '../pages/public/login';
 import Register from '../pages/public/register';
-import Team from '../pages/autorized/team';
+import TeamGroup from '../pages/autorized/teamGroup';
+import Custumers from '../pages/autorized/custumers';
+import Cars from '../pages/autorized/cars';
+import CarParts from '../pages/autorized/carParts';
+import Settings from '../pages/autorized/settings';
+import Charts from '../pages/autorized/charts';
 import DashboardHome from '../pages/autorized/DashboardHome';
 import ProtectedRoute from './ProtectedRoute';
 import { UserAuthContextProvider } from '../context/UserAuthContext';
@@ -28,9 +33,34 @@ function Router () {
               <DashboardHome />
             </ProtectedRoute>
           } />
-          <Route path={ROUTES.AUTORIZED_TEAM} element={
+          <Route path={ROUTES.AUTORIZED_TEAM_GROUP} element={
             <ProtectedRoute>
-              <Team />
+              <TeamGroup />
+            </ProtectedRoute>
+          } />
+          <Route path={ROUTES.AUTORIZED_CUSTUMERS} element={
+            <ProtectedRoute>
+              <Custumers />
+            </ProtectedRoute>
+          } />
+          <Route path={ROUTES.AUTORIZED_CARS} element={
+            <ProtectedRoute>
+              <Cars />
+            </ProtectedRoute>
+          } />
+          <Route path={ROUTES.AUTORIZED_CAR_PARTS} element={
+            <ProtectedRoute>
+              <CarParts />
+            </ProtectedRoute>
+          } />
+          <Route path={ROUTES.AUTORIZED_SETTINGS} element={
+            <ProtectedRoute>
+              <Settings />
+            </ProtectedRoute>
+          } />
+          <Route path={ROUTES.AUTORIZED_CHARTS} element={
+            <ProtectedRoute>
+              <Charts />
             </ProtectedRoute>
           } />
         </Routes>

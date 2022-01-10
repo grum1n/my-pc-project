@@ -11,37 +11,37 @@ export const DashboardLinks = [
   },
   {
     title: 'Team Group',
-    path: '/autorized/team',
+    path: '/autorized/team_group',
     icon: <IoIcons.IoMdPeople />,
     cName: 'sidebar-links'
   },
   {
-    title: 'Custumers',
-    path: '/autorized/dashboard_home',
+    title: 'Customers',
+    path: '/autorized/custumers',
     icon: <FaIcons.FaUsers />,
     cName: 'sidebar-links'
   },
   {
     title: 'Cars',
-    path: '/autorized/dashboard_home',
+    path: '/autorized/cars',
     icon: <FaIcons.FaCar />,
     cName: 'sidebar-links'
   },
   {
       title: 'Car parts',
-      path: '/autorized/dashboard_car_parts',
+      path: '/autorized/car_parts',
       icon: <FaIcons.FaReceipt />,
       cName: 'sidebar-links'
   },
   {
     title: 'Settings',
-    path: '/autorized/dashboard_car_parts',
+    path: '/autorized/settings',
     icon: <FaIcons.FaCog />,
     cName: 'sidebar-links'
   },
   {
     title: 'Charts',
-    path: '/autorized/dashboard_car_parts',
+    path: '/autorized/charts',
     icon: <FaIcons.FaRegChartBar />,
     cName: 'sidebar-links'
   }

@@ -1,20 +1,14 @@
-import React from 'react'
+import React from 'react';
+import PageHeading from '../DashboardTitle';
+import './dashboardContent.css';
 
-function DashboardContent({ children }) {
+function DashboardContent({ children, name}) {
     return (
-        <div>
+        <div className='dashboard-content'>
+            <PageHeading name={name}/>
             {children}
-            DashboardContent
-
-            xxxcjdcsdncnldjsnjcn
-            {/* <section className='container'>
-          <Addpart />
-        </section>
-        <section>
-        <CarParts />
-        </section> */}
         </div>
     )
 }
 
-export default DashboardContent
+export default DashboardContent;

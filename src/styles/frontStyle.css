@@ -65,6 +65,32 @@ img{
   background-color: var(--white);
 }
 
+/*section-one-card*/
+.section-one-card{
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/*section-two-cards*/
+.section-two-cards{
+  margin-top: 1.5rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Car part box*/
 .car-part-box{
   margin-top: 20px;  
@@ -110,8 +136,17 @@ img{
   font-weight: 500;
   line-height: 1.50rem;
 }
+
+
+
 @media screen and (max-width: 1000px) {
   .navigation{
       display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  /*section-two-cards*/
+  .section-two-cards{
+    grid-template-columns: 1fr;
   }
 }

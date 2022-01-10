@@ -1,0 +1,26 @@
+.single-card {
+    background-color: var(--white);
+    border-radius: 5px;
+}
+.single-card-title{
+    margin: 0;
+    padding: .8rem;
+    color: var(--dark-gray);
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--tate-olive);
+}
+.single-card-content{
+    margin: 0;
+    padding: .8rem;
+    color: var(--dark-gray);
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: var(--dark-blue);
+}

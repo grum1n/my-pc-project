@@ -1,0 +1,28 @@
+.section-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.section-heading h2 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+    color: var(--white);
+}
+.section-heading-right{
+    display: flex;
+    text-align: center;
+}
+.section-heading-right h4{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+.section-heading-right span{
+    padding-left: .3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--white);
+}
