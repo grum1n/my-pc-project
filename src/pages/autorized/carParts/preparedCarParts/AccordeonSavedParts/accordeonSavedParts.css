@@ -1,0 +1,29 @@
+.saved-car-parts-table{
+    margin: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+.saved-car-parts-table-title{
+    padding: 10px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+.table-title-name:first-child{
+    width: 20px;
+    text-align: center;
+}
+.table-title-name:last-child{
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+}
+.saved-car-parts{
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.saved-car-parts:hover{
+    background-color: var(--tate-olive);
+    color: var(--white);
+}

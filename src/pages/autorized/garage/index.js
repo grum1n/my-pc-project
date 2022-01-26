@@ -3,23 +3,17 @@ import { useUserAuth } from '../../../context/UserAuthContext';
 import Dashboard from '../../../components/Dashboard';
 import DashboardContent from '../../../components/DashboardContent';
 import SingleCard from '../../../components/SingleCard';
-import AddDestructiveCar from './AddDestructiveCar';
-import CarsList from './CarsList';
+import GarageCarList from './GarageCarList';
 
-function Cars() {
+function Garage() {
     const { user, logOut } = useUserAuth();
        
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
-            <DashboardContent name='Cars'>
+            <DashboardContent name='Garage'>
             <section className='section-one-card'> 
-                <SingleCard title='Add Car'>
-                    <AddDestructiveCar />
-                </SingleCard>
-            </section>
-            <section className='section-one-card'> 
-                <SingleCard title='Cars List'>
-                    <CarsList />
+                <SingleCard title='Destructive cars'>
+                    <GarageCarList />
                 </SingleCard>
             </section>
             </DashboardContent>
@@ -27,4 +21,4 @@ function Cars() {
     )
 }
 
-export default Cars;
+export default Garage;

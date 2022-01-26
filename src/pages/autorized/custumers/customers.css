@@ -1,20 +1,11 @@
 .groups-container {
-    margin: 0 auto;
-    max-width: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   
+    width: 100%;
+    text-align: center;
 }
 .groups-container li {
     padding: 20px 0;
     width: 300px;
-}
-.groups-container li:first-child {
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 .groups-container li input {
     background-color: var(--white);

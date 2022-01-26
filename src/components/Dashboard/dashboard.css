@@ -72,7 +72,7 @@ a:hover.dashboard-menu-bars {
     font-weight: 400;
 }
 /*logout button*/
-.logout-button-container{padding-left: 2rem;}  
+.logout-button-container{padding: 0 2rem;}  
 .logout-button{
     text-align: center;
     margin-right: 3rem; 
@@ -93,7 +93,7 @@ a:hover.dashboard-menu-bars {
     display: flex;
     flex-direction: column;
     width: 270px;
-    height: 90vh;
+    height: 100%;
     position: absolute;
     top: 80px;
     left: -10%;
@@ -156,4 +156,29 @@ a:hover.dashboard-menu-bars {
     width: 94%;
     height: 100vh;
     opacity: 1;
+}
+
+@media screen and (max-width: 1100px) {
+    .search-wrapper{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar-menu {
+       display: none;
+    } 
+    .sidebar-menu-items {
+        display: none;
+    }
+    /*main content*/
+    .main-content{
+        transition: all 0.5s ease; 
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-content-full{
+        height: 100vh;
+       
+    }
 }

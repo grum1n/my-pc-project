@@ -1,0 +1,36 @@
+.parts-list-container{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1600px;
+}
+.parts-list-align{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.parts-list-title{
+    background-color: var( --dark-gray);
+    color: var(--white);
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    padding: 13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.parts-info-container{
+    text-align: left;
+    width: 30px;
+    text-align: center;
+}
+.parts-info-container-center{
+    padding-left: 50px;
+    width: 100%;
+}
+.parts-list-hover:hover {
+    background-color: var(--light-sand);
+}

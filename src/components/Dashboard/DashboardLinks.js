@@ -28,21 +28,28 @@ export const DashboardLinks = [
     cName: 'sidebar-links'
   },
   {
+    title: 'Garage',
+    path: '/autorized/garage',
+    icon: <FaIcons.FaWarehouse />,
+    cName: 'sidebar-links'
+  },
+  {
       title: 'Car parts',
       path: '/autorized/car_parts',
       icon: <FaIcons.FaReceipt />,
       cName: 'sidebar-links'
-  },
-  {
-    title: 'Settings',
-    path: '/autorized/settings',
-    icon: <FaIcons.FaCog />,
-    cName: 'sidebar-links'
-  },
-  {
-    title: 'Charts',
-    path: '/autorized/charts',
-    icon: <FaIcons.FaRegChartBar />,
-    cName: 'sidebar-links'
   }
+  //,
+  // {
+  //   title: 'Settings',
+  //   path: '/autorized/settings',
+  //   icon: <FaIcons.FaCog />,
+  //   cName: 'sidebar-links'
+  // },
+  // {
+  //   title: 'Charts',
+  //   path: '/autorized/charts',
+  //   icon: <FaIcons.FaRegChartBar />,
+  //   cName: 'sidebar-links'
+  // }
 ]

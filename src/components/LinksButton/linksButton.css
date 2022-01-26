@@ -1,0 +1,18 @@
+.links-button{
+    border: none;
+    min-width: 120px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px ;
+    cursor: pointer;
+}
+.links-button:hover{
+    background-color: var(--orange);
+    color: var(--dark-blue);
+}

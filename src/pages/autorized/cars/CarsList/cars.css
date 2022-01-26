@@ -1,0 +1,138 @@
+.cars-list-container{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1600px;
+}
+.cars-list-align{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-gray);
+}
+.cars-list-title{
+    background-color: var( --dark-gray);
+    color: var(--white);
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cars-list-action-box{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cars-info-container{
+    text-align: left;
+    min-width: 100px;
+}
+.car-list-hover:hover {
+    background-color: var(--light-sand);
+}
+
+.btn {
+    border: none;
+    width: 35px;
+    height: 35px;
+    background-color: var(--tate-olive);
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--dark-blue);
+}
+/* .btn-edit {
+    background-color: #008cba;
+}
+.btn-delete {
+    background-color: #f44336;
+}
+.btn-view{
+    background-color: #e7e7e7;
+    color: black;
+} */
+
+
+
+/* .styled-table{
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+.styled-table thead tr {
+    background-color: var( --dark-gray);
+    color: #fff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+.styled-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid var( --dark-gray);
+}
+
+
+.dropdown {
+    width: 20%;
+    margin: 5px;
+}
+
+.btn-reset {
+    background-color: darkolivegreen;
+    color: black;
+}
+.btn-active{
+    background-color: #808c4a;
+    color: black;
+}
+
+.btn-inactive {
+    background-color: #445f61;
+    color: black;
+}
+
+*/
+
+@media screen and (max-width: 1100px ) {
+    .cars-list-title{
+        display: none;
+    }
+   .cars-list-align{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-auto-rows: auto;
+       grid-template-areas: 
+       'col-1 col-1 col-6'
+       'col-2 col-3 col-6'
+       'col-4 col-4 col-6'
+       'col-5 col-5 col-6'
+   }
+   .cars-list-action-box{
+       flex-direction: column;
+       width: 100%;
+       padding: 20px 0;
+       min-height: 200px;
+   }
+} 

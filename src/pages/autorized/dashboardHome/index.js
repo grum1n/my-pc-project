@@ -21,6 +21,7 @@ function DashboardHome() {
                         text 2
                     </SingleCard>
                 </section>
+                
                 <section className='section-one-card'> 
                     <SingleCard title='Single card C'>
                         text 2

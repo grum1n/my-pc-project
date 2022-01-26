@@ -9,11 +9,9 @@ import userImg from '../../images/profile.jpg';
 import Button from '../Button';
 
 function Dashboard({ userEmail, logOut, children }) {
-    // const [sidebar,setSidebar] = useState(true);
     const sidebar = true;
     const [main,setMain] = useState(true);
     const showSidebar = () => {
-        // setSidebar(!sidebar);
         setMain(!main);
     } 
     const navigate = useNavigate();
@@ -23,14 +21,14 @@ function Dashboard({ userEmail, logOut, children }) {
             await logOut();
             navigate('/login');
         } catch (error) {
-        //  {error.message}
+            alert(error);
         }
     };
     return (
         <>
         <div className='dashboard-container'>
         <header className='dashboard-header'>
-                <nav className='flex-between'>
+                <div className='flex-between'>
                     <div className='flex-container'>
                         <Link to='/autorized/dashboard_home'>
                             <LogoImage url={ImgLogo} title='logo' cName='logo-style' />
@@ -44,10 +42,10 @@ function Dashboard({ userEmail, logOut, children }) {
                         <input type='search' placeholder='Search here'/>
                     </div>
                     <ul className='flex-container user-wrapper'>
-                        <li>
+                        <li className='userImage'>
                             <LogoImage url={userImg} title='user logo' cName='user-header-style' />
                         </li>
-                        <li>
+                        <li className='userEmail'>
                             <h4>{userEmail}</h4>
                             <small>Super Admin</small>
                         </li>
@@ -55,7 +53,7 @@ function Dashboard({ userEmail, logOut, children }) {
                             <Button onClick={handleLogout} cName='logout-button' name='Logout' />
                         </li>
                     </ul>
-                </nav>
+                </div>
             </header>
         
             <nav className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
@@ -76,8 +74,7 @@ function Dashboard({ userEmail, logOut, children }) {
                 {children}
             </div>
         </div>
-        </>
-            
+        </>  
     )
 }
 

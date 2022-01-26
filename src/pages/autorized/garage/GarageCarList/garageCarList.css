@@ -1,0 +1,53 @@
+.cars-list-container{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1600px;
+}
+.cars-list-align{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-gray);
+}
+.cars-list-title{
+    background-color: var( --dark-gray);
+    color: var(--white);
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cars-list-action-box{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cars-info-container{
+    text-align: left;
+    min-width: 100px;
+}
+.car-list-hover:hover {
+    background-color: var(--light-sand);
+}
+
+.btn {
+    border: none;
+    width: 35px;
+    height: 35px;
+    background-color: var(--tate-olive);
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--dark-blue);
+}

@@ -10,12 +10,18 @@ import Register from '../pages/public/register';
 import TeamGroup from '../pages/autorized/teamGroup';
 import Custumers from '../pages/autorized/custumers';
 import Cars from '../pages/autorized/cars';
-import CarParts from '../pages/autorized/carParts';
 import Settings from '../pages/autorized/settings';
 import Charts from '../pages/autorized/charts';
 import DashboardHome from '../pages/autorized/DashboardHome';
 import ProtectedRoute from './ProtectedRoute';
 import { UserAuthContextProvider } from '../context/UserAuthContext';
+import UpdateCarInfo from '../pages/autorized/cars/UpdateCarInfo';
+import Garage from '../pages/autorized/garage';
+import GarageCarParts from '../pages/autorized/garage/GarageCarList/GarageCarParts';
+import GarageSavedParts from '../pages/autorized/garage/GarageCarList//GarageCarParts/CarPartsCheckBox/GarageSavedParts';
+import SavedCarParts from '../pages/autorized/cars/SavedCarParts';
+import CarParts from '../pages/autorized/carParts';
+import EditCarPart from '../pages/autorized/carParts/preparedCarParts/EditCarPart';
 
 function Router () {
   return (
@@ -48,9 +54,39 @@ function Router () {
               <Cars />
             </ProtectedRoute>
           } />
-          <Route path={ROUTES.AUTORIZED_CAR_PARTS} element={
+          <Route path={ROUTES.AUTORIZED_UPDATE_DESTRYCTIVE_CAR_INFO} element={
+            <ProtectedRoute>
+              <UpdateCarInfo />
+            </ProtectedRoute>
+          } />
+           <Route path={ROUTES.AUTORIZED_SAVED_CAR_PARTS} element={
+            <ProtectedRoute>
+              <SavedCarParts />
+            </ProtectedRoute>
+          } />
+            <Route path={ROUTES.AUTORIZED_GARAGE} element={
+            <ProtectedRoute>
+              <Garage />
+            </ProtectedRoute>
+          } />
+           <Route path={ROUTES.AUTORIZED_GARAGE_CAR_PARTS} element={
+            <ProtectedRoute>
+              <GarageCarParts />
+            </ProtectedRoute>
+          } />
+           <Route path={ROUTES.AUTORIZED_GARAGE_SAVED_PARTS} element={
+            <ProtectedRoute>
+              <GarageSavedParts />
+            </ProtectedRoute>
+          } />
+           <Route path={ROUTES.AUTORIZED_CAR_PARTS} element={
             <ProtectedRoute>
               <CarParts />
+            </ProtectedRoute>
+          } />
+          <Route path={ROUTES.AUTORIZED_CAR_PART_EDIT} element={
+            <ProtectedRoute>
+              <EditCarPart />
             </ProtectedRoute>
           } />
           <Route path={ROUTES.AUTORIZED_SETTINGS} element={

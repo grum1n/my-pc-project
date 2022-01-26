@@ -3,6 +3,7 @@ import Dashboard from '../../../components/Dashboard'
 import DashboardContent from '../../../components/DashboardContent'
 import SingleCard from '../../../components/SingleCard';
 import { useUserAuth } from '../../../context/UserAuthContext';
+import PreparedCarParts from './preparedCarParts';
 
 function CarParts() {
     const { user, logOut } = useUserAuth();
@@ -10,24 +11,13 @@ function CarParts() {
         <Dashboard userEmail={user.email} logOut={logOut}>
             <DashboardContent name='Car Parts'>
                 <section className='section-one-card'> 
-                    <SingleCard title='Car Parts List'>
-                        add car part <br />
-                        update car part<br /> 
-                        delete <br />
-                         list
-
+                    <SingleCard title='Prepared Car Parts'>
+                        <PreparedCarParts />
                     </SingleCard>
-                </section>    
-                   car parts page
-                    {/* <section className='container'>
-                <Addpart />
-                </section>
-                <section>
-                <CarParts />
-                </section> */}
+                </section>   
             </DashboardContent>
         </Dashboard>
     )
 }
 
-export default CarParts
+export default CarParts;
