@@ -40,7 +40,7 @@ function Footer () {
                );
              })}
              </li>
-             <li className='footer-box footer-phone'>
+             <li className='footer-phone'>
                <h3>Phone</h3>
                <p className='footer-phone-number'>
                  <a href='tel: 864766898'>
@@ -57,43 +57,3 @@ function Footer () {
 }
 
 export default Footer;
-
-// const Footer = () => {
-//   return (
-//         ***<footer className='footer'>
-//           <ul className='container footer-flex'>
-//             <li className='footer-address-box'>
-//               <h3>Address</h3>
-//               <p>Kaunas</p>
-//               <p>Laisvės alėja</p>
-//               <p>Lietuva</p>
-//             </li>
-//             <li className='footer-meniu-box'>
-//             <h3>Meniu</h3>
-//             {MobileMenu.map((item, index) => {
-//               return (
-//                 <li key={index}>
-//                     <Link to={item.path} className='footer-menu-links'>
-//                         <FaIcons.FaChevronRight className='footer-menu-chevron' />
-//                         <span>{item.title}</span>
-//                     </Link>
-//                 </li>
-//               );
-//             })}
-//             </li>
-//             <li className='footer-box footer-phone'>
-//               <h3>Phone</h3>
-//               <p className='footer-phone-number'>
-//                 <a href='tel: 864766898'>
-//                    <FaIcons.FaPhoneAlt className='phone-icon' />
-//                 </a>
-//                  +370 647 66888
-//               </p>
-//               <p>Jei turite klausimų, susisiekite kontaktai@cardp.com</p>
-//             </li>
-//           </ul>
-//        *** </footer>
-//   );
-// };
-
-// export default Footer;

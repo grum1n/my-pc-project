@@ -83,7 +83,7 @@ nav{
     background-color: rgba(100,94,70,1);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
     .navigation{
         display: none;
     }
