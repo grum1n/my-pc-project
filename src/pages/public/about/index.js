@@ -47,24 +47,24 @@ const About = () => {
                 </div>
             </div>
         <section className='stats-container'>
-            <ul className='container flex-around'>
-                <li>
+            <div className='container stats-div-box-layout'>
+                <div className='stats-div-box'>
                     <h2>13000+</h2>
                     <h5>Naudota paieška</h5>
-                </li>
-                <li>
+                </div>
+                <div className='stats-div-box'>
                     <h2>64+</h2>
                     <h5>Laužynai</h5>
-                </li>
-                <li>
+                </div>
+                <div className='stats-div-box'>
                     <h2>550/d.</h2>
                     <h5>Įkeliama detalių</h5>
-                </li>
-                <li>
+                </div>
+                <div className='stats-div-box'>
                     <h2>148.000</h2>
                     <h5>Sandėlyje datalių</h5>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
         <Footer />
     </>

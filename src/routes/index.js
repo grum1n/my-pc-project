@@ -10,6 +10,7 @@ export const ROUTES = {
   AUTORIZED_CUSTUMERS: '/autorized/custumers',
   AUTORIZED_CARS: '/autorized/cars',
   AUTORIZED_UPDATE_DESTRYCTIVE_CAR_INFO: '/autorized/update_destructive_car_info/:id',
+  AUTORIZED_CARS_SEARCH: '/autorized/cars_search',
   AUTORIZED_SAVED_CAR_PARTS: '/autorized/cars/saved_car_parts/:id',
   AUTORIZED_GARAGE: '/autorized/garage',
   AUTORIZED_GARAGE_CAR_PARTS: '/autorized/garage/car_parts/:id',

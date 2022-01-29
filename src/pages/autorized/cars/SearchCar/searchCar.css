@@ -1,0 +1,21 @@
+.add-car-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.add-car-form > input{
+    margin: 0 10px 20px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+/*Search box*/
+.search-table{
+    margin: 20px auto;
+    max-width: 600px;
+}
+.search-table-heading{
+    background-color: var(--dark-gray);
+}

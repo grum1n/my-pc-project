@@ -123,7 +123,9 @@ function AddDestructiveCar() {
                         onChange={handleInput}
                     />
                 </div>
-                <input  type='submit' value='Add car' className='add-car-submit' />
+                <div className='add-car-input-box'>
+                        <input  type='submit' value='Add car' className='add-car-submit' />
+                </div>
             </form>
         </section>
         

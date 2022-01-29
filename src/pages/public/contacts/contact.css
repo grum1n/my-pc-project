@@ -10,6 +10,7 @@
 }
 .contact-li-boxes{
     margin: 0 auto;
+    padding-left: 30px;
     min-width: 300px;
     text-align: left;
     display: flex;
@@ -82,5 +83,22 @@
         grid-template-areas: 
         'col-1'
         'col-2'
+    }
+    .contact-form-heading{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 650px) {
+    .contact-li-boxes{
+        min-width: 200px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap:22px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .contact-li-boxes{
+       padding: 0 10px;
     }
 }

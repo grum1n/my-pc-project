@@ -22,6 +22,7 @@ import GarageSavedParts from '../pages/autorized/garage/GarageCarList//GarageCar
 import SavedCarParts from '../pages/autorized/cars/SavedCarParts';
 import CarParts from '../pages/autorized/carParts';
 import EditCarPart from '../pages/autorized/carParts/preparedCarParts/EditCarPart';
+import CarSearchResult from '../pages/autorized/cars/SearchCar/CarSearchResult';
 
 function Router () {
   return (
@@ -57,6 +58,11 @@ function Router () {
           <Route path={ROUTES.AUTORIZED_UPDATE_DESTRYCTIVE_CAR_INFO} element={
             <ProtectedRoute>
               <UpdateCarInfo />
+            </ProtectedRoute>
+          } />
+           <Route path={ROUTES.AUTORIZED_CARS_SEARCH} element={
+            <ProtectedRoute>
+              <CarSearchResult />
             </ProtectedRoute>
           } />
            <Route path={ROUTES.AUTORIZED_SAVED_CAR_PARTS} element={

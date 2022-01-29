@@ -4,6 +4,7 @@ import { onValue, ref, remove } from 'firebase/database';
 import './cars.css';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
+import SearchCar from '../SearchCar/SearchForm';
 
 function CarsList() {
     const [ data, setData] = useState({});
@@ -35,6 +36,9 @@ function CarsList() {
 
     return(
         <ul className='cars-list-container'>
+            <li>
+                <SearchCar />
+            </li>
             <li className='cars-list-title'>
                 <span className='cars-info-container'>No.</span>
                 <span className='cars-info-container'>Brand</span>
