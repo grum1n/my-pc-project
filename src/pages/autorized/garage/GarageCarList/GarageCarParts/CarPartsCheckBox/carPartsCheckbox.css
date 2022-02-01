@@ -1,4 +1,11 @@
-.submit-button{
+.checkPart-box {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: var(--light-sand);
+    border-radius: 5px;
+}
+
+.checkbox-submit-button{
     border: none;
     background-color: var(--dark-gray);
     color: var(--white);
@@ -12,7 +19,8 @@
     cursor: pointer;
 }
 
-.submit-button:hover {
+.checkbox-submit-button:hover {
     background-color: var(--orange);
     color: var(--dark-blue);
 }
+

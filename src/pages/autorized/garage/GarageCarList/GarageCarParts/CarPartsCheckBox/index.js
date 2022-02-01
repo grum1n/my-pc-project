@@ -50,8 +50,7 @@ function CarPartsCheckBox() {
                 {
                     packingListData.map(({ name }, index) => {
                         return (
-                            <li key={index} style={{ padding: '5px' }}>
-                                <label htmlFor={`custom-checkbox-${index}`}>{name}</label>
+                            <li key={index} className='checkPart-box'>
                                 <input
                                     type='checkbox'
                                     id={`custom-checkbox-${index}`}
@@ -60,11 +59,12 @@ function CarPartsCheckBox() {
                                     checked={checkedState[index]}
                                     onChange={() => handleOnChange(index)}
                                 />
+                                <label htmlFor={`custom-checkbox-${index}`}>{name}</label>
                             </li>
                         );
                     })
                 }   
-                <button type='submit' className='submit-button'>Add parts</button>
+                <button type='submit' className='checkbox-submit-button'>Add parts</button>
             </ul>
         </form>
     );

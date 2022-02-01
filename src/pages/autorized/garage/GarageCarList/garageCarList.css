@@ -1,16 +1,16 @@
-.cars-list-container{
+.garage-list-container{
     margin: 0 auto;
     padding: 10px;
     max-width: 1600px;
 }
-.cars-list-align{
+.garage-list-align{
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--dark-gray);
 }
-.cars-list-title{
+.garage-list-title{
     background-color: var( --dark-gray);
     color: var(--white);
     text-align: left;
@@ -20,21 +20,21 @@
     justify-content: space-between;
     align-items: center;
 }
-.cars-list-action-box{
+.garage-list-action-box{
     width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.cars-info-container{
+.garage-info-container{
     text-align: left;
     min-width: 100px;
 }
-.car-list-hover:hover {
+.garage-list-hover:hover {
     background-color: var(--light-sand);
 }
 
-.btn {
+.garagebtn {
     border: none;
     width: 35px;
     height: 35px;
@@ -47,7 +47,32 @@
     justify-content: center;
     align-items: center;
 }
-.btn:hover {
+.garagebtn:hover {
     background-color: var(--orange);
     color: var(--dark-blue);
 }
+
+@media screen and (max-width: 1100px ) {
+    .garage-list-title{
+        display: none;
+    }
+   .garage-list-align{
+       margin-bottom: 20px;
+       border-radius: 5px;
+       background-color: var(--light-sand);
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-auto-rows: auto;
+       grid-template-areas: 
+       'col-1 col-1 col-6'
+       'col-2 col-3 col-6'
+       'col-4 col-4 col-6'
+       'col-5 col-5 col-6'
+   }
+   .garage-list-action-box{
+       flex-direction: column;
+       width: 100%;
+       padding: 20px 0;
+       height: 150px;
+   }
+} 

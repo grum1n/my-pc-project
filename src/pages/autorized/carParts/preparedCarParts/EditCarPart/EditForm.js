@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { storage } from '../../../../../server/firebase-config';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import EditSubForm from "./EditSubForm";
+import './editForm.css';
+import SingleCard from '../../../../../components/SingleCard';
 
 
 const EditCarPartForm = ({ carId, carBrand, carModel, carYear,carPartId, carPartName}) => {
@@ -13,7 +15,6 @@ const EditCarPartForm = ({ carId, carBrand, carModel, carYear,carPartId, carPart
         setImage(event.target.files[0]);
       }
     }
-    console.log('image',image)
   
     const handleSubmit = () => {
       const imageRef = ref(storage, `carPartImages/${image.name}`);
@@ -25,32 +26,37 @@ const EditCarPartForm = ({ carId, carBrand, carModel, carYear,carPartId, carPart
           }
           setUrl(images);
         }).catch((error) => {
-          console.log(error.message, 'error  getting the image url')
+          alert(error.message, 'error  getting the image url')
         })
         setImage(null);
       }).catch((error) => {
-        console.log(error.message)
+        alert(error.message)
       })
     }
   
     return (
         <>
-          <div>
-              <img src={url} alt='' style={{ width: '213px', height: '160px' }}/>
-              <input  type='file' onChange={handleImageChange} />
-              <button onClick={handleSubmit}>Add foto to form</button>
-              <h1>Hello world</h1>
-              <hr />
-          </div>
-          <EditSubForm 
-              carId={carId} 
-              carBrand={carBrand} 
-              carModel={carModel} 
-              carYear={carYear} 
-              carPartId={carPartId} 
-              carPartName={carPartName}
-              carPartImageUrl={url}
-          />
+          <section className='section-two-cards'>
+              <SingleCard title='Add Foto'>
+                <div className='editForm-img-container'>
+                  <img src={url} alt='' style={{ width: '213px', height: '160px' }}/>
+                  <h5>Foto must be 640 x 480</h5>
+                  <input  type='file' onChange={handleImageChange} />
+                  <button onClick={handleSubmit}>Add foto to form</button>
+                </div>
+              </SingleCard>
+              <SingleCard title='Add car part info'>
+                <EditSubForm 
+                  carId={carId} 
+                  carBrand={carBrand} 
+                  carModel={carModel} 
+                  carYear={carYear} 
+                  carPartId={carPartId} 
+                  carPartName={carPartName}
+                  carPartImageUrl={url}
+              />
+              </SingleCard>
+          </section>
         </>
     )
 }
