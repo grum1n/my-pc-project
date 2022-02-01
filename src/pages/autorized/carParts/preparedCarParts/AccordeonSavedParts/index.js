@@ -33,12 +33,10 @@ function SavedCarParts({ savedCarPartsID }) {
             {
                 newData.map((part, partId) => {
                     return(
-                        <>
                         <li key={partId} className='saved-car-parts'>
                             <span className=''>{partId + 1}. {part} </span>
-                            <LinksButton redirectPath={`/autorized/car_parts/edit/${savedCarPartsID}`} name={`Edit id: ${partId}`}/>
+                            <LinksButton redirectPath={`/autorized/car_parts/edit/${savedCarPartsID}/${partId}`} name={`Edit id: ${partId}`}/>
                         </li>
-                        </>
                     )
                 })
             }

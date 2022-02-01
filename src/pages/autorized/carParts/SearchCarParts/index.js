@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './searchCar.css';
+import './searchCarParts.css';
 
-function SearchCar () {
+function SearchCarParts () {
     const [search, setSearch] = useState('')
 
    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate(`/autorized/cars_search?carBrand=${search}`);
+        navigate(`/autorized/carParts_search?carBrand=${search}`);
         setSearch('');
     }
     
@@ -23,4 +23,4 @@ function SearchCar () {
         </form>
     )
 }
-export default SearchCar;
+export default SearchCarParts;

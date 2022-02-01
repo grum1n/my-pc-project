@@ -3,11 +3,13 @@ import * as FaIcons from 'react-icons/fa';
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
+import ScrollButtonContainer from '../../../components/ScrollButton';
 import './contact.css';
 
 const Contact = () => {
   return (
     <>
+    <ScrollButtonContainer>
     <Header />
       <Hero heading='Kontaktai' />
           <ul className='container contact-box'>
@@ -33,6 +35,9 @@ const Contact = () => {
             </li>
           </ul>
           <Footer />
+
+    </ScrollButtonContainer>
+    
     </>
   );
 };

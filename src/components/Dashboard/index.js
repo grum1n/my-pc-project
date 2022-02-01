@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import './dashboard.css';
@@ -10,7 +10,8 @@ import Button from '../Button';
 
 function Dashboard({ userEmail, logOut, children }) {
     const sidebar = true;
-    const [main,setMain] = useState(true);
+    const [isVisible, setIsVisible] = useState(false);
+    const [main, setMain] = useState(true);
     const showSidebar = () => {
         setMain(!main);
     } 
@@ -24,10 +25,30 @@ function Dashboard({ userEmail, logOut, children }) {
             alert(error);
         }
     };
+
+    //scroll to top
+    const toggleVisibility = () => {
+        if (window.pageYOffset > 400) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+    };
+    
+    const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    };
+    useEffect(() => {
+        window.addEventListener("scroll", toggleVisibility);
+    }, []);
+
     return (
         <>
         <div className='dashboard-container'>
-        <header className='dashboard-header'>
+            <header className='dashboard-header'>
                 <div className='flex-between'>
                     <div className='flex-container'>
                         <Link to='/autorized/dashboard_home'>
@@ -36,10 +57,6 @@ function Dashboard({ userEmail, logOut, children }) {
                         <Link to='#' className='dashboard-menu-bars'>
                             <FaIcons.FaBars onClick={showSidebar} />
                         </Link>
-                    </div>
-                    <div className='search-wrapper'>
-                        <span className=''><FaIcons.FaSearch /></span>
-                        <input type='search' placeholder='Search here'/>
                     </div>
                     <ul className='flex-container user-wrapper'>
                         <li className='userImage'>
@@ -72,8 +89,17 @@ function Dashboard({ userEmail, logOut, children }) {
             </nav>
             <div className={main ? 'main-content' : 'main-content-full'}>
                 {children}
+                
+            </div>
+            <div className='scroll-to-top'>
+                {isVisible && 
+                    <div onClick={scrollToTop} className='scroll-chevron'>
+                        <FaIcons.FaChevronUp />
+                    </div>
+                }
             </div>
         </div>
+                
         </>  
     )
 }

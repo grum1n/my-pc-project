@@ -16,12 +16,12 @@ export const Menu = [
     icon: <IoIcons.IoMdPeople />,
     cName: 'nav-text'
   },
-  {
-    title: 'Laužynai',
-    path: '/companies',
-    icon: <FaIcons.FaStore />,
-    cName: 'nav-text'
-  },
+  // {
+  //   title: 'Laužynai',
+  //   path: '/companies',
+  //   icon: <FaIcons.FaStore />,
+  //   cName: 'nav-text'
+  // },
   {
     title: 'Kontaktai',
     path: '/contact',

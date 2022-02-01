@@ -4,7 +4,7 @@ import './hero.css';
 function Hero(props) {
     return (
         <section className='hero'>
-            <h2>{ props.heading }{props.test}</h2>
+            <h2 className='hero-h2'>{ props.heading }{props.test}</h2>
         </section>
     )
 }

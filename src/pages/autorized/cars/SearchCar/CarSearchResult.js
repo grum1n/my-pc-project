@@ -13,7 +13,6 @@ function CarSearchResult() {
             <DashboardContent name='Cars'>
             <section className='section-one-card'> 
                 <SingleCard title='Car search result'>
-                   
                    <CarSearchBox />
                 </SingleCard>
             </section>

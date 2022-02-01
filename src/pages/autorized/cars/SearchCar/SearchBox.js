@@ -2,8 +2,8 @@ import { endAt, onValue, orderByChild, query, ref, startAt } from "firebase/data
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import LinksButton from "../../../../components/LinksButton";
+import SearchField from "../../../../components/SearchField";
 import { fireDB } from '../../../../server/firebase-config';
-import SearchCar from "./SearchForm";
 
 function CarSearchBox () {
     const [data, setData] = useState({});
@@ -15,8 +15,6 @@ function CarSearchBox () {
     let searchQuery = useQuery();
     let search = searchQuery.get('carBrand');
   
-
-
     useEffect(() => {
         onValue(query(ref(fireDB, 'destructiveCars'), orderByChild('carBrand'), startAt(search), endAt(search + "\uf8ff")),(snapshot) => {
             if (snapshot.val()) {
@@ -29,7 +27,10 @@ function CarSearchBox () {
     return (
         <div>
             <LinksButton redirectPath={`/autorized/cars`} name={'Go back to Cars List'} />
-            <SearchCar />
+            <SearchField
+                navigatePath={`/autorized/cars_search?carBrand=`}
+                placehoderText='Search car brand ...'
+            />
             {Object.keys(data).length === 0 ? (
             <h2>No Search Found with that name :</h2>
         ) : (
@@ -56,13 +57,9 @@ function CarSearchBox () {
                                  <td>{data[id].status}</td>
                              </tr>
                          )
-                     
                      })}
                  </tbody>
-
-
              </table>
-
         )}
         </div>
     )

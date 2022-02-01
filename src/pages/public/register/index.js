@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../../../components/Footer';
 import { useUserAuth } from '../../../context/UserAuthContext';
 import Header from '../../../components/Header';
+import ScrollButtonContainer from '../../../components/ScrollButton';
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -25,6 +26,7 @@ const Register = () => {
 
   return (
     <>
+    <ScrollButtonContainer>
     <Header />
         <section className='hero'>
           <div className='container flex-center'>
@@ -43,6 +45,9 @@ const Register = () => {
           </div>
         </section>
         <Footer />
+
+    </ScrollButtonContainer>
+    
     </>
   );
 };

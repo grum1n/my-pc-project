@@ -20,11 +20,13 @@ const Custumers = () => {
   const handleCustomerChange = (event) => {
     setCustomer(event.target.value);
   }
+ 
 
   useEffect(() => {
     onValue(ref(fireDB, `/customers`), (snapshot) => {
       setCustomers([]);
-        const data = snapshot.val();
+        const data = snapshot.val([]);
+        
         if(data !== null) {
           Object.values(data).map((customer) => {
             setCustomers((oldArray) => [ ...oldArray, customer]);
@@ -37,6 +39,7 @@ const Custumers = () => {
     const uuid = uid();
     set(ref(fireDB , `/customers/${uuid}`), {
       customer,
+     
       uuid
     });
     setCustomer('');
@@ -66,33 +69,33 @@ const Custumers = () => {
       <DashboardContent name='Customers'>
       <section className='section-one-card'> 
         <SingleCard title='Customers page'>
-          <ul className='groups-container'>
+          <ul className='customers-container'>
             <li>
-            <input type='text' value={customer} onChange={handleCustomerChange} />
-         
-            {isEdit ? (
-                <>
-                  <button onClick={handleSubmitChange}>Change client info</button>
-                  <button onClick={() => {
-                      setIsEdit(false);
-                      setCustomer('');
-                  }}>x</button>
-                </>
-            ) :
-              (
+              <input type='text'  className='customers-input-field' value={customer} onChange={handleCustomerChange} />
+          
+              {isEdit ? (
                   <>
-                  <button className='group-button' onClick={writeToDatabase} >Add client</button>
+                    <button className='customers-button' onClick={handleSubmitChange}>Change customers info</button>
+                    <button className='customers-button-cancel' onClick={() => {
+                        setIsEdit(false);
+                        setCustomer('');
+                    }}>x</button>
                   </>
-              )}
+              ) :
+                (
+                    <>
+                    <button className='customers-button' onClick={writeToDatabase} >Add customer</button>
+                    </>
+                )}
             </li>  
-            <li>
+            <li className='customers-info'>
               {
                 customers.map((customer,index) => (
-                  <p key={index} className='group-result' >
-                    <span># {customer.customer}</span>
+                  <p key={index} className='current-customer' >
+                    <span className='current-customer-span'>{customer.customer}</span>
                     <div>
-                      <button className='group-edit-btn'  onClick={() => handleUpdate(customer)}><FaIcons.FaEdit /></button>
-                      <button  className='group-delete-btn' onClick={() => handleDelete(customer)}><FaIcons.FaTimes /></button>
+                      <button className='customers-edit-btn'  onClick={() => handleUpdate(customer)}><FaIcons.FaEdit /></button>
+                      <button  className='customers-delete-btn' onClick={() => handleDelete(customer)}><FaIcons.FaTimes /></button>
                     </div>
                   </p>
                 ))

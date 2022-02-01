@@ -78,7 +78,7 @@ function AddDestructiveCar() {
 
     return (
         <section>
-            <form  className='add-car-form'onSubmit={handleSubmit}>
+            <form  className='addCarForm' onSubmit={handleSubmit}>
                 <div className='add-car-input-box'>
                     <label htmlFor='carBrand'>Brand</label>
                     <input 
@@ -118,7 +118,7 @@ function AddDestructiveCar() {
                         type='text'
                         id='status'
                         name='status'
-                        placeholder='status.. '
+                        placeholder='Status.. '
                         value={status || ''}
                         onChange={handleInput}
                     />
@@ -128,7 +128,6 @@ function AddDestructiveCar() {
                 </div>
             </form>
         </section>
-        
     )
 }
 

@@ -8,10 +8,12 @@ import PictureC from '../../../images/ardomiauto2.jpg';
 import PictureD from '../../../images/carpWeb.jpg';
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
+import ScrollButtonContainer from '../../../components/ScrollButton';
 
 const About = () => {
   return (
     <>
+    <ScrollButtonContainer>
     <Header />
         <Hero heading='Apie mus' tetst='alio'/>
             <div className='container about-grid'>
@@ -53,7 +55,7 @@ const About = () => {
                     <h5>Naudota paieška</h5>
                 </div>
                 <div className='stats-div-box'>
-                    <h2>64+</h2>
+                    <h2>25+</h2>
                     <h5>Laužynai</h5>
                 </div>
                 <div className='stats-div-box'>
@@ -62,11 +64,14 @@ const About = () => {
                 </div>
                 <div className='stats-div-box'>
                     <h2>148.000</h2>
-                    <h5>Sandėlyje datalių</h5>
+                    <h5>Sandėlyje detalių</h5>
                 </div>
             </div>
         </section>
         <Footer />
+
+    </ScrollButtonContainer>
+        
     </>
   );
 };

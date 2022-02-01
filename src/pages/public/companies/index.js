@@ -6,10 +6,12 @@ import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
+import ScrollButtonContainer from '../../../components/ScrollButton';
 
 const Companies = () => {
   return (
     <>
+    <ScrollButtonContainer>
     <Header />
       <Hero heading='Laužynai' />
             <div className='container'>
@@ -38,6 +40,9 @@ const Companies = () => {
               </ul>
             </div>
             <Footer />
+
+    </ScrollButtonContainer>
+    
     </>
   );
 };

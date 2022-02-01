@@ -1,5 +1,6 @@
 export const ROUTES = {
   PUBLIC_DEFAULT: '/',
+  PUBLIC_SEARCH: '/search',
   PUBLIC_ABOUT: '/about',
   PUBLIC_COMPANIES: '/companies',
   PUBLIC_CONTACT: '/contact',
@@ -16,7 +17,8 @@ export const ROUTES = {
   AUTORIZED_GARAGE_CAR_PARTS: '/autorized/garage/car_parts/:id',
   AUTORIZED_GARAGE_SAVED_PARTS: '/autorized/garage/saved_parts/:id',
   AUTORIZED_CAR_PARTS: '/autorized/car_parts',
-  AUTORIZED_CAR_PART_EDIT: '/autorized/car_parts/edit/:id',
+  AUTORIZED_CAR_PART_EDIT: '/autorized/car_parts/edit/:id/:partId',
+  AUTORIZED_CAR_PARTS_SEARCH_RESULT: '/autorized/car_parts_search',
   AUTORIZED_SETTINGS: '/autorized/settings',
   AUTORIZED_CHARTS: '/autorized/charts'
 };

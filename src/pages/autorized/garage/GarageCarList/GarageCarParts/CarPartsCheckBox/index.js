@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { fireDB } from '../../../../../../server/firebase-config';
 import { ref, set } from 'firebase/database';
 import { packingListData } from './packingListData';
-import { uid } from 'uid';
 import './carPartsCheckbox.css';
 
 function CarPartsCheckBox() {
@@ -39,10 +38,8 @@ function CarPartsCheckBox() {
 
     const handleOnSubmit = async (event) => {
         event.preventDefault();
-        const uuid = uid();
         set(ref(fireDB , `destructiveCars/${id}/carPartsCollection`), {
-            savedCarParts,
-            uuid
+            savedCarParts
         });
         navigate(`/autorized/garage/saved_parts/${id}`);
     }

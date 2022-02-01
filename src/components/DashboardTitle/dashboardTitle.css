@@ -26,3 +26,8 @@
     font-weight: 400;
     color: var(--white);
 }
+@media screen and (max-width: 500px){
+    .section-heading-right{
+        display: none;
+    }
+}

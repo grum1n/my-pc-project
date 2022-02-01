@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './login.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../../../components/Footer';
 import { useUserAuth } from '../../../context/UserAuthContext';
 import Header from '../../../components/Header';
+import ScrollButtonContainer from '../../../components/ScrollButton';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -25,21 +26,25 @@ const Login = () => {
 
   return (
     <>
-      <Header />
-      <section className='hero'>
+    <ScrollButtonContainer>
+    <Header />
+      <section className='login-hero'>
         <div className='container flex-center'>
           <form className='flex-column login-form-box' onClick={handleSubmit}>
           {error && alert(error) }
             <input className='login-input' type='email' placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
             <input className='login-input' type='password' placeholder='Slaptažodis'  onChange={(e) => setPassword(e.target.value)} />
               <button variant='primary' type='Submit' className='login-button'>Prisijungti</button>
-            <p>
+            {/* <p>
               <Link className='login-bottom-text' to='/register'>Čia galite susikurti paskyrą</Link>
-            </p>
+            </p> */}
           </form>
         </div>
       </section>
       <Footer />
+
+    </ScrollButtonContainer>
+     
     </>
   );
 };

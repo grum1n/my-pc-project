@@ -5,6 +5,8 @@ import { useUserAuth } from '../../../context/UserAuthContext';
 import DashboardContent from '../../../components/DashboardContent';
 import Cards from '../../../components/Cards';
 import SingleCard from '../../../components/SingleCard';
+import CarPartsList from './CarPartsList';
+import SearchField from '../../../components/SearchField';
 
 function DashboardHome() {
     const { user, logOut } = useUserAuth();
@@ -21,10 +23,16 @@ function DashboardHome() {
                         text 2
                     </SingleCard>
                 </section>
-                
                 <section className='section-one-card'> 
-                    <SingleCard title='Single card C'>
-                        text 2
+                    <SingleCard title='Car Parts List'>
+                        <div className='dashboard-searchField-box'>
+                            <SearchField
+                                navigatePath={`/autorized/car_parts_search?carPartName=`}
+                                placehoderText='Search car Part Name ...'
+                                buttonColor='#333333'
+                            />
+                        </div>
+                        <CarPartsList />
                     </SingleCard>
                 </section>
             </DashboardContent>

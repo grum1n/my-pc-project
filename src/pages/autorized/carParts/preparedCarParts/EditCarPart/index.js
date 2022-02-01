@@ -7,6 +7,7 @@ import DashboardContent from '../../../../../components/DashboardContent';
 import SingleCard from '../../../../../components/SingleCard';
 import { useUserAuth } from '../../../../../context/UserAuthContext';
 import LinksButton from '../../../../../components/LinksButton';
+import EditCarPartForm from './EditForm';
 
 const initialState = {
     carBrand: '',
@@ -18,7 +19,7 @@ const initialState = {
 function EditCarPart() {
     const { user, logOut } = useUserAuth();
 
-    const {id} = useParams();
+    const {id, partId} = useParams();
 
     const [state, setState] = useState(initialState);
     const {carBrand, carModel,carYear} = state;
@@ -51,14 +52,9 @@ function EditCarPart() {
     }, [id, data]);
 
     function fecthData () {
-        onValue(ref(fireDB, `destructiveCars/${id}/carPartsCollection/savedCarParts`), (snapshot) => {
-            setNewData([]);
+        onValue(ref(fireDB, `destructiveCars/${id}/carPartsCollection/savedCarParts/${partId}`), (snapshot) => {
             const data = snapshot.val();
-            if(data !== null) {
-                Object.values(data).map((partsCollection) => {
-                    setNewData((oldArray) => [ ...oldArray, partsCollection]);
-                });
-            }
+            setNewData(data);
         });
     }
     
@@ -76,24 +72,19 @@ function EditCarPart() {
                         {carBrand} {carModel} {carYear}
                     </h3>   
                     <ul className='parts-list-container'>
-                    <li>Reikia kad čia pasirodytu detale ant kurios spaudziau...,nereikia viso sarašo kur apacioje </li>
-                        <li className='parts-list-title'>
-                            <span className='parts-info-container'>No.</span>
-                            <span className='parts-info-container-center'>Part</span>
-                        </li>
-                       
-                        {
-                            newData.map((item, partId) => {
-                                return(
-                                    <>
-                                    <li key={partId} className='parts-list-align car-list-hover'>
-                                        <span className='col-1 parts-info-container'>{partId + 1}</span>
-                                        <span className='col-2 parts-info-container-center'>{item}</span>
-                                    </li>
-                                    </>
-                                )
-                            })
-                        }
+                    <li className='parts-list-title'>
+                        {newData}
+                    </li>
+                    <li>
+                        <EditCarPartForm 
+                            carId={id} 
+                            carBrand={carBrand} 
+                            carModel={carModel}
+                            carYear={carYear}
+                            carPartId={partId} 
+                            carPartName={newData}
+                        />
+                    </li>  
                     </ul>
                 </SingleCard>
             </section>

@@ -1,4 +1,10 @@
-
+.login-hero{
+  width: 100%;
+  padding: 50px 0;
+  background: rgb(100,94,70);
+  background: linear-gradient(90deg, rgba(100,94,70,1) 7%, rgba(155,143,100,1) 51%, rgba(100,94,70,1) 95%);
+  height: 100vh;
+}
 /*Login page*/
 .login-form-box{
     margin-top: 50px;

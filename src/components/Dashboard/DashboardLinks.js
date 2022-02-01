@@ -39,7 +39,7 @@ export const DashboardLinks = [
       icon: <FaIcons.FaReceipt />,
       cName: 'sidebar-links'
   }
-  //,
+  // ,
   // {
   //   title: 'Settings',
   //   path: '/autorized/settings',

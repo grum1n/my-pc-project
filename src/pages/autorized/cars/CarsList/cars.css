@@ -3,6 +3,9 @@
     padding: 10px;
     max-width: 1600px;
 }
+.cars-search-container {
+    padding-bottom: 23px;
+}
 .cars-list-align{
     padding: 5px 10px;
     display: flex;

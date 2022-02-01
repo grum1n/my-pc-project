@@ -4,13 +4,14 @@
     padding: 150px 10px;
     background: rgb(100,94,70);
     background: linear-gradient(90deg, rgba(100,94,70,1) 7%, rgba(155,143,100,1) 51%, rgba(100,94,70,1) 95%);
-    min-height: 433px;
+    height: 333px;
 }
-h2{
+.heroSearch-h2{
+    margin: 0 0 20px;
     color: var(--white);
-    font-size: 2.625rem;
+    font-size:2.2rem;
     font-weight: 400;
-    line-height: 3.25em;
+    line-height: 2.5rem;
     text-align: center;
 }
 .search-box{
@@ -37,4 +38,27 @@ h2{
 .search-button:hover{
     background-color: var(--dark-gray);
     color: var(--white);
+}
+@media screen and (max-width: 1000px ){
+    .heroSearch{
+        padding: 80px 10px;
+        height: 223px;
+    }
+    .heroSearch-h2{
+        font-size:1.7rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 444px ){
+    .heroSearch{
+        padding: 80px 10px;
+        height: 223px;
+    }
+    .heroSearch-h2{
+        font-size:1.4rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
 }

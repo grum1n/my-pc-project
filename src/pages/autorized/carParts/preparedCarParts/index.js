@@ -34,23 +34,19 @@ function PreparedCarParts() {
     return(
         <ul className='cars-list-container'>
             {
-                Object.keys(data).map((id, index) => {
-                    return(
-                        <>
-                        <div className='WrapContainer'>
-                            <div className='Wrap' onClick={() => toggle(index)} key={index}>
-                                <span>{index + 1}</span>
-                                <h1>{data[id].carBrand} {data[id].carModel} / {data[id].carYear} / {data[id].status}</h1>
+                Object.keys(data).map(( id, index) => 
+                    <div className='WrapContainer' key={index}>
+                        <div className='Wrap' onClick={() => toggle(index)} key={index}>
+                            <span>{index + 1}</span>
+                            <h1>{data[id].carBrand} {data[id].carModel} / {data[id].carYear} / {data[id].status}</h1>
+                        </div>
+                        {clicked === index ? (
+                            <div className='Dropdown'>
+                                <SavedCarParts savedCarPartsID={id}/>
                             </div>
-                            {clicked === index ? (
-                                <div className='Dropdown'>
-                                    <SavedCarParts savedCarPartsID={id}/>
-                                </div>
-                            ) : null }
-                         </div>
-                        </>
-                    );
-                })
+                        ) : null }
+                    </div>
+                )
             }
         </ul>
     )

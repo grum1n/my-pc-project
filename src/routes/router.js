@@ -23,6 +23,8 @@ import SavedCarParts from '../pages/autorized/cars/SavedCarParts';
 import CarParts from '../pages/autorized/carParts';
 import EditCarPart from '../pages/autorized/carParts/preparedCarParts/EditCarPart';
 import CarSearchResult from '../pages/autorized/cars/SearchCar/CarSearchResult';
+import CarPartsSearchresult from '../pages/autorized/DashboardHome/CarPartsList/SearchCarPart'
+import PublicSearch from '../pages/public/search';
 
 function Router () {
   return (
@@ -30,6 +32,7 @@ function Router () {
       <UserAuthContextProvider>
         <Routes>
           <Route path={ROUTES.PUBLIC_DEFAULT} element={<Home />} />
+          <Route path={ROUTES.PUBLIC_SEARCH} element={<PublicSearch />} />
           <Route path={ROUTES.PUBLIC_ABOUT} element={<About />} />
           <Route path={ROUTES.PUBLIC_COMPANIES} element={<Companies />} />
           <Route path={ROUTES.PUBLIC_CONTACT} element={<Contact />} />
@@ -93,6 +96,11 @@ function Router () {
           <Route path={ROUTES.AUTORIZED_CAR_PART_EDIT} element={
             <ProtectedRoute>
               <EditCarPart />
+            </ProtectedRoute>
+          } />
+           <Route path={ROUTES.AUTORIZED_CAR_PARTS_SEARCH_RESULT} element={
+            <ProtectedRoute>
+              <CarPartsSearchresult />
             </ProtectedRoute>
           } />
           <Route path={ROUTES.AUTORIZED_SETTINGS} element={
