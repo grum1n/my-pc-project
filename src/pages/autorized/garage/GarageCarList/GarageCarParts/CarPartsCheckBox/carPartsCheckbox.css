@@ -23,4 +23,12 @@
     background-color: var(--orange);
     color: var(--dark-blue);
 }
+.saved-part-box{
+    background-color: var(--light-sand);
+    padding: 5px;
+    margin: 5px 0;
+}
+.saved-part-box-span{
+    padding-left: 5px;
+}
 

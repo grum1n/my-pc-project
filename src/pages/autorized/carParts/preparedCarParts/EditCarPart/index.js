@@ -4,10 +4,10 @@ import { useParams } from 'react-router-dom';
 import { onValue, ref } from 'firebase/database';
 import Dashboard from '../../../../../components/Dashboard';
 import DashboardContent from '../../../../../components/DashboardContent';
-import SingleCard from '../../../../../components/SingleCard';
 import { useUserAuth } from '../../../../../context/UserAuthContext';
 import LinksButton from '../../../../../components/LinksButton';
 import EditCarPartForm from './EditForm';
+import './editForm.css';
 
 const initialState = {
     carBrand: '',
@@ -65,16 +65,10 @@ function EditCarPart() {
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
             <DashboardContent name='Car Parts'>
-            <section className='section-one-card'> 
-                <SingleCard title={`Edit car part page`}>
-                    <LinksButton redirectPath={`/autorized/car_parts`} name={'Go back to Prepared Car Parts'} />
-                    <h3 style={{ padding: '30px 0 0', width: '100%', textAlign: 'center' }}>
-                        {carBrand} {carModel} {carYear}
-                    </h3>   
-                    <ul className='parts-list-container'>
-                    <li className='parts-list-title'>
-                        {newData}
-                    </li>
+                <div>
+                <LinksButton redirectPath={`/autorized/car_parts`} name={'Go back to Prepared Car Parts'} />
+                    <ul>
+                 
                     <li>
                         <EditCarPartForm 
                             carId={id} 
@@ -86,8 +80,7 @@ function EditCarPart() {
                         />
                     </li>  
                     </ul>
-                </SingleCard>
-            </section>
+                </div>
             </DashboardContent>
         </Dashboard>
     )

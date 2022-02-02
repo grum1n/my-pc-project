@@ -82,17 +82,17 @@ function GarageSavedParts() {
                             <span className='parts-info-container-center'>Parts</span>
                         </li>
                         {
-                                newData.map((item, partId) => {
-                                    return(
-                                        <>
-                                        <li key={partId} className='parts-list-align car-list-hover'>
-                                            <span className='col-1 parts-info-container'>{partId + 1}</span>
-                                            <span className='col-2 parts-info-container-center'>{item}</span>
+                            newData.map((item, partId) => {
+                                return(
+                                    <>
+                                        <li key={partId} className='saved-part-box'>
+                                            <span className='saved-part-box-span'>{partId + 1}.</span>
+                                            <span className='saved-part-box-span'>{item}</span>
                                         </li>
-                                        </>
-                                    )
-                                })
-                            }
+                                    </>
+                                )
+                            })
+                        }
                     </ul>
                 </SingleCard>
             </section>

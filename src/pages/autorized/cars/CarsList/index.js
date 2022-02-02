@@ -40,6 +40,8 @@ function CarsList() {
                 <SearchField
                     navigatePath={`/autorized/cars_search?carBrand=`}
                     placehoderText='Search car brand ...'
+                    buttonColor='#333333'
+
                 />
             </li>
             <li className='cars-list-title'>

@@ -3,12 +3,14 @@ import * as FaIcons from 'react-icons/fa';
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
+import PageContextGoToTop from '../../../components/PageContextGoToTop';
 import ScrollButtonContainer from '../../../components/ScrollButton';
 import './contact.css';
 
 const Contact = () => {
   return (
     <>
+     <PageContextGoToTop />
     <ScrollButtonContainer>
     <Header />
       <Hero heading='Kontaktai' />

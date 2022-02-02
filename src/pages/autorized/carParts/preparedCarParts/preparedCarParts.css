@@ -33,15 +33,17 @@
 }
 .Wrap span {
     margin: 0 26px 0 0;
+    padding: 0 12px;
     width: 35px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--white);
     background-color: var(--dark-gray); 
-    border-radius: 50%;
+    border-radius: 3px;
+   
 }
 .Dropdown {
     padding: 50px 30px 0;

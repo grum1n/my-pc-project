@@ -6,7 +6,7 @@
     justify-content: center;
 }
 .groups-container li {
-    padding: 20px 0;
+    padding: 10px 0;
     width: 300px;
 }
 .groups-container li:first-child {
@@ -76,4 +76,11 @@
 .group-delete-btn:hover{
     background-color: var(--red);
     color: var(--white);
+}
+
+@media screen and (max-width: 500px){
+    .groups-container li {
+        padding: 10px 0;
+        width: 260px;
+    }
 }

@@ -70,8 +70,8 @@ const Custumers = () => {
       <section className='section-one-card'> 
         <SingleCard title='Customers page'>
           <ul className='customers-container'>
-            <li>
-              <input type='text'  className='customers-input-field' value={customer} onChange={handleCustomerChange} />
+            <li className='customers-container-input-box'>
+              <input type='text' className='customers-input-field' value={customer} onChange={handleCustomerChange} />
           
               {isEdit ? (
                   <>

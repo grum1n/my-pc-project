@@ -21,50 +21,45 @@ const TeamGroup = () => {
     setGroup(e.target.value);
   }
 
-    // read 
-    useEffect(() => {
-        onValue(ref(fireDB, `/groups`), (snapshot) => {
-            setGroups([]);
-            const data = snapshot.val();
-            if(data !== null) {
-                Object.values(data).map((group) => {
-                    setGroups((oldArray) => [ ...oldArray, group]);
-                });
-            }
-        });
-    }, []);
+  useEffect(() => {
+      onValue(ref(fireDB, `/groups`), (snapshot) => {
+          setGroups([]);
+          const data = snapshot.val();
+          if(data !== null) {
+              Object.values(data).map((group) => {
+                  setGroups((oldArray) => [ ...oldArray, group]);
+              });
+          }
+      });
+  }, []);
 
-    // write
-    const writeToDatabase = () => {
-        const uuid = uid();
-        set(ref(fireDB , `/groups/${uuid}`), {
-          group,
-          uuid
-        });
-        setGroup('');
-    };
+  const writeToDatabase = () => {
+      const uuid = uid();
+      set(ref(fireDB , `/groups/${uuid}`), {
+        group,
+        uuid
+      });
+      setGroup('');
+  };
 
-    //update
-    const handleUpdate = (group) => {
-        setIsEdit(true);
-        setGroupUid(group.uuid);
-        setGroup(group.group);
-    };
+  const handleUpdate = (group) => {
+      setIsEdit(true);
+      setGroupUid(group.uuid);
+      setGroup(group.group);
+  };
 
-    const handleSubmitChange = () => {
-        update(ref(fireDB, `/groups/${groupUid}`), {
-          group,
-          uuid: groupUid
-        })
-        setGroup('');
-        setIsEdit(false);
-    };
+  const handleSubmitChange = () => {
+      update(ref(fireDB, `/groups/${groupUid}`), {
+        group,
+        uuid: groupUid
+      })
+      setGroup('');
+      setIsEdit(false);
+  };
 
-    //delete
-    const handleDelete = (group) => {
-        remove(ref(fireDB, `/groups/${group.uuid}`))
-    };
-
+  const handleDelete = (group) => {
+      remove(ref(fireDB, `/groups/${group.uuid}`))
+  };
 
   return (
     <Dashboard userEmail={user.email} logOut={logOut}>

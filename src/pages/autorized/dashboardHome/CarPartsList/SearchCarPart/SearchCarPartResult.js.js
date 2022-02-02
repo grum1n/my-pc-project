@@ -30,11 +30,13 @@ function SearchCarPart () {
     return (
         <>
             <LinksButton redirectPath={`/autorized/dashboard_home`} name={'Go back to Cars Parts List'} />
-            <SearchField
-                navigatePath={`/autorized/car_parts_search?carPartName=`}
-                placehoderText='Search by part name ..'
-                buttonColor='#333333'
-            />
+            <div className='search-component-box'>
+                <SearchField
+                    navigatePath={`/autorized/car_parts_search?carPartName=`}
+                    placehoderText='Search part name ..'
+                    buttonColor='#333333'
+                />
+            </div>
             <ul>
                 {Object.keys(data).map((id, index) => {
                     return(

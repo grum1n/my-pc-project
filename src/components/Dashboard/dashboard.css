@@ -151,6 +151,11 @@ a:hover.dashboard-menu-bars {
     border: 2px solid var(--dark-gray);
 }
 
+.sidebar-logout-button{
+    display: none;
+}
+
+
 @media screen and (max-width: 800px) {
     /*main content*/
     .main-content{
@@ -176,4 +181,20 @@ a:hover.dashboard-menu-bars {
     .logout-button{
         display: none;
     }
+    .sidebar-logout-button{
+        display: block;
+        margin-top: 20px; 
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--dark-blue);
+        border-radius: 30px;
+        border:none;
+        background-image: url(../../images/bgx-o.png);
+        cursor: pointer;
+    }
+    .sidebar-logout-button{ background-image: url(../../images/bgx-2.jpg);}
+    
+    
 }

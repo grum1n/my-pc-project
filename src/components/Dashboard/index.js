@@ -11,7 +11,7 @@ import Button from '../Button';
 function Dashboard({ userEmail, logOut, children }) {
     const sidebar = true;
     const [isVisible, setIsVisible] = useState(false);
-    const [main, setMain] = useState(true);
+    const [main, setMain] = useState(false);
     const showSidebar = () => {
         setMain(!main);
     } 
@@ -86,6 +86,7 @@ function Dashboard({ userEmail, logOut, children }) {
                         );
                     })}
                 </ul>
+                <Button onClick={handleLogout} cName='sidebar-logout-button' name='Logout' />
             </nav>
             <div className={main ? 'main-content' : 'main-content-full'}>
                 {children}

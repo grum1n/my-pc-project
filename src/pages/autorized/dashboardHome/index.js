@@ -15,20 +15,12 @@ function DashboardHome() {
         <Dashboard userEmail={user.email} logOut={logOut}>
             <DashboardContent>
                 <Cards />
-                <section className='section-two-cards'>
-                    <SingleCard title='Single card A'>
-                        text 1
-                    </SingleCard>
-                    <SingleCard title='Single card B'>
-                        text 2
-                    </SingleCard>
-                </section>
                 <section className='section-one-card'> 
                     <SingleCard title='Car Parts List'>
                         <div className='dashboard-searchField-box'>
                             <SearchField
                                 navigatePath={`/autorized/car_parts_search?carPartName=`}
-                                placehoderText='Search car Part Name ...'
+                                placehoderText='Search Part Name ...'
                                 buttonColor='#333333'
                             />
                         </div>

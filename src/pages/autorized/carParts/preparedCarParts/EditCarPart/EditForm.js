@@ -38,11 +38,12 @@ const EditCarPartForm = ({ carId, carBrand, carModel, carYear,carPartId, carPart
         <>
           <section className='section-two-cards'>
               <SingleCard title='Add Foto'>
-                <div className='editForm-img-container'>
-                  <img src={url} alt='' style={{ width: '213px', height: '160px' }}/>
+                <div className='editForm-addFoto-container'>
+                  <h3 className='editForm-partName'>{carPartName}</h3>
+                  <img src={url} alt='' className='editForm-image'/>
                   <h5>Foto must be 640 x 480</h5>
                   <input  type='file' onChange={handleImageChange} />
-                  <button onClick={handleSubmit}>Add foto to form</button>
+                  <button className='editForm-img-button' onClick={handleSubmit}>Add foto to form</button>
                 </div>
               </SingleCard>
               <SingleCard title='Add car part info'>
