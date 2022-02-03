@@ -29,11 +29,11 @@ function SearchCarPart () {
 
     return (
         <>
-            <LinksButton redirectPath={`/autorized/dashboard_home`} name={'Go back to Cars Parts List'} />
+            <LinksButton redirectPath={`/autorized/dashboard_home`} name={'atgal'} />
             <div className='search-component-box'>
                 <SearchField
                     navigatePath={`/autorized/car_parts_search?carPartName=`}
-                    placehoderText='Search part name ..'
+                    placehoderText='Detalės pavadinimas ..'
                     buttonColor='#333333'
                 />
             </div>
@@ -44,16 +44,16 @@ function SearchCarPart () {
                             <img src={data[id].carPartImageUrl[0]} alt='' className='car-parts-img'/>
                             <div className='car-parts-list-grid'>
                                 <h3 className='col-1 car-parts-info-title'>{data[id].carPartName}</h3>
-                                <p className='col-2 car-part-price'><span>Price: {data[id].price} &euro;</span></p>
+                                <p className='col-2 car-part-price'><span>Kaina: {data[id].price} &euro;</span></p>
                                 <div className='col-3 car-parts-info'>
-                                <p>Car : {data[id].carBrand} {data[id].carModel}</p>
-                                <p>Year : {data[id].carYear}</p>
-                                <p>PartCode: {data[id].partCode}.</p>
+                                <p>Automobilis : {data[id].carBrand} {data[id].carModel}</p>
+                                <p>Metai : {data[id].carYear}</p>
+                                <p>Kodas: {data[id].partCode}.</p>
                                 </div>
                                 <div className='col-4 car-parts-info'>
-                                <p>Status : {data[id].selectedStatus}</p>
-                                <p>Date: {data[id].displayTodaysDate}</p>
-                                <h5>CarID: {data[id].carId} / CarPartID: {data[id].carPartId} / Part_id: {data[id].part_id} / <span> Find: {index + 1}</span> </h5>
+                                <p>Statusas : {data[id].selectedStatus}</p>
+                                <p>Data: {data[id].displayTodaysDate}</p>
+                                <h5>CarID: {data[id].carId} / CarPartID: {data[id].carPartId} / Part_id: {data[id].part_id} /  Vieta: {data[id].placeInWarehouse} / <span> Find: {index + 1}</span> </h5>
                                 </div>
                             </div>
                             <div className='car-parts-info-action'>

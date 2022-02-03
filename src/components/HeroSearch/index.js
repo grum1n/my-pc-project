@@ -8,7 +8,7 @@ function HeroSearch(props) {
             <h2 className='heroSearch-h2'>{ props.heading }</h2>
             <SearchField
                 navigatePath={`/search?carPartName=`}
-                placehoderText='Search car Part Name ...'
+                placehoderText='Detalės pavadinimas ...'
             />
         </section>
     )

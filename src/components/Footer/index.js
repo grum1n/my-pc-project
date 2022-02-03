@@ -22,7 +22,7 @@ function Footer () {
       </div>
       <ul className='container footer-flex'>
              <li className='footer-address-box'>
-               <h3>Address</h3>
+               <h3>Adresas</h3>
                <p>Kaunas</p>
                <p>Laisvės alėja</p>
                <p>Lietuva</p>
@@ -41,7 +41,7 @@ function Footer () {
              })}
              </li>
              <li className='footer-phone'>
-               <h3>Phone</h3>
+               <h3>Telefonas</h3>
                <p className='footer-phone-number'>
                  <a href='tel: 864766898'>
                     <FaIcons.FaPhoneAlt className='phone-icon' />

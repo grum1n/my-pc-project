@@ -57,21 +57,21 @@ const EditSubForm = ({ carId, carBrand, carModel, carYear,carPartId, carPartName
     return (
         <ul className='editSubForm-container'>
             <li>
-                <input className='editSubForm-input' type='text' value={partCode}  placeholder='Part Code ..' onChange={handlePartCodeChange} />
+                <input className='editSubForm-input' type='text' value={partCode}  placeholder='Detalės kodas ..' onChange={handlePartCodeChange} />
             </li> 
             <li>
-                <input className='editSubForm-input' type='number' value={price}  placeholder='Price ..' onChange={handlePriceChange} />
+                <input className='editSubForm-input' type='number' value={price}  placeholder='Kaina ..' onChange={handlePriceChange} />
             </li> 
             <li>
                 <select className='editSubForm-dropdown' name={selectedStatus} onChange={handleChangeStatus}>
-                    <option>Please Select</option>
-                    <option value='forSale'>For sale</option>
-                    <option value='reserved'>Reserved</option>
-                    <option value='sold'>Sold</option>
+                    <option>Pasirinkite būseną</option>
+                    <option value='forSale'>Parduodama</option>
+                    <option value='reserved'>Rezervuota</option>
+                    <option value='sold'>Parduota</option>
                 </select>
             </li>
             <li>
-                <input className='editSubForm-input' type='text' value={placeInWarehouse}  placeholder='Place ..' onChange={handlePlaceChange} />
+                <input className='editSubForm-input' type='text' value={placeInWarehouse}  placeholder='Sandėlio vieta ..' onChange={handlePlaceChange} />
             </li> 
             
             <li>
@@ -79,7 +79,7 @@ const EditSubForm = ({ carId, carBrand, carModel, carYear,carPartId, carPartName
             </li>
             
             <li>
-                <button className='editSubForm-button' onClick={AddCarPartToList} >Add car Part to Public List</button>
+                <button className='editSubForm-button' onClick={AddCarPartToList} >Pridėti į sandėlį</button>
             </li>
       </ul>
     )

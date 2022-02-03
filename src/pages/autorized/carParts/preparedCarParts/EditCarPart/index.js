@@ -64,9 +64,9 @@ function EditCarPart() {
 
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
-            <DashboardContent name='Car Parts'>
+            <DashboardContent name='Detalės'>
                 <div>
-                <LinksButton redirectPath={`/autorized/car_parts`} name={'Go back to Prepared Car Parts'} />
+                <LinksButton redirectPath={`/autorized/car_parts`} name={'atgal'} />
                     <ul>
                  
                     <li>

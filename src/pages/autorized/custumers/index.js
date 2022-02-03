@@ -66,16 +66,16 @@ const Custumers = () => {
 
   return (
     <Dashboard userEmail={user.email} logOut={logOut}>
-      <DashboardContent name='Customers'>
+      <DashboardContent name='Klientai'>
       <section className='section-one-card'> 
-        <SingleCard title='Customers page'>
+        <SingleCard title='Klientų duomenys'>
           <ul className='customers-container'>
             <li className='customers-container-input-box'>
               <input type='text' className='customers-input-field' value={customer} onChange={handleCustomerChange} />
           
               {isEdit ? (
                   <>
-                    <button className='customers-button' onClick={handleSubmitChange}>Change customers info</button>
+                    <button className='customers-button' onClick={handleSubmitChange}>Pakeisti kliento duomenis</button>
                     <button className='customers-button-cancel' onClick={() => {
                         setIsEdit(false);
                         setCustomer('');
@@ -84,7 +84,7 @@ const Custumers = () => {
               ) :
                 (
                     <>
-                    <button className='customers-button' onClick={writeToDatabase} >Add customer</button>
+                    <button className='customers-button' onClick={writeToDatabase} >Pridėti klientą</button>
                     </>
                 )}
             </li>  

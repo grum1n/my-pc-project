@@ -1,307 +1,307 @@
 export const packingListData = [
     {
-      name:'Engine petrol/Variklis benzininis',
+      name:'Variklis benzininis',
       units:[1, 2, 3, 4, 5, 6, 7, 8, 9]
     },
     {
-      name:'Engine diesel/Variklis dyzelinis',
+      name:'Variklis dyzelinis',
       units: ''
     },
     {
-      name:'Engine gas/Variklis dujinis',
+      name:'Variklis dujinis',
       units: ''
     },
     {
-      name:'Engine hibrid-electricity/Variklis hibridas-elektrinis'
+      name:'Variklis hibridas-elektrinis'
     },
     {
-      name:'Automatic gearbox/Automatine pavaru deze'
+      name:'Automatinė pavarų dėžė'
     },
     {
-      name:'Manual gearbox/Mechanine pavaru deze'
+      name:'Mechaninė pavarų dėžė'
     },
     {
-      name:'Transfer  box/pavaru dezes reduktorius'
+      name:'Pavarų dėžės reduktorius'
     },
     {
-      name:'ABS pump/ABS blokas'
+      name:'ABS blokas'
     },
     {
-      name:'Acceleretor pedal/Akseleratoriaus pedalas'
+      name:'Akseleratoriaus pedalas'
     },
     {
-      name:'Oil Cooler/Alyvos ausintuvas'
+      name:'Alyvos aušintuvas'
     },
     {
-      name:'Oil pan cover/Alyvos karterio apsauga'
+      name:'Alyvos karterio apsauga'
     },
     {
-      name:'Shock absorber/Amortizatorius'
+      name:'Amortizatorius'
     },
     {
-      name:'Antenna/Antena'
+      name:'Antena'
     },
     {
-      name:'Parking sensor/Atstumo daviklis'
+      name:'Atstumo daviklis'
     },
     {
-      name:'Cooling fluid tank/Ausinamojo skyscio bakelis'
+      name:'Aušinamojo skysčio bakelis'
     },
     {
-      name:'Cooling hoses/Ausinimo slangos'
+      name:'Aušinimo šlangos'
     },
     {
-      name:'Cooling radiator/Ausinimo radiatorius'
+      name:'Aušinimo radiatorius'
     },
     {
-      name:'Cooling fan/Ausinimo ventiliatorius'
+      name:'Aušinimo ventiliatorius'
     },
     {
-      name:'Boot lid/Bagazines dangtis'
+      name:'Bagažinės dangtis'
     },
     {
-      name:'Boot lid lock/Bagazines dangcio uzraktas'
+      name:'Bagažinės dangčio užraktas'
     },
     {
-      name:'Boot lid springs/Bagazines dangcio spyruokles'
+      name:'Bagažinės dangčio spyruoklės'
     },
     {
-      name:'Boot curtain/Bagazines uzuolaida storke'
+      name:'Bagažinės užuolaida štorkė'
     },
     {
-      name:'Boot lid gas strut/Bagazines dangcio dujiniai amortizatoriai/stumokliukai'
+      name:'Bagažinės dangčio dujiniai amortizatoriai/stumokliukai'
     },
     {
-      name:'Battery/Baterija'
+      name:'Baterija'
     },
     {
-      name:'Bumper/Buferis'
+      name:'Buferis'
     },
     {
-      name:'Bumper holders/Buferio laikikliai'
+      name:'Buferio laikikliai'
     },
     {
-      name:'Bumper member/Buferio stiprintuvas'
+      name:'Buferio stiprintuvas'
     },
     {
-      name:'Bumper trims/Buferio apdailos dalys'
+      name:'Buferio apdailos dalys'
     },
     {
-      name:'CD changer/CD keitiklis'
+      name:'CD keitiklis'
     },
     {
-      name:'CD player/CD grotuvas'
+      name:'CD grotuvas'
     },
     {
-      name:'Center console/Centrinė konsole'
+      name:'Centrinė konsole'
     },
     {
-      name:'Glovebox/Daiktadieze'
+      name:'Daiktadėžė'
     },
     {
-      name:'Undercar trims/Dugno apsaugine apdaila'
+      name:'Dugno apsauginė apdaila'
     },
     {
-      name:'Door/Durys'
+      name:'Durys'
     },
     {
-      name:'Door control module/Duru valdymo modulis'
+      name:'Durų valdymo modulis'
     },
     {
-      name:'Door handle/Duru rankena'
+      name:'Durų rankena'
     },
     {
-      name:'Door hinges/Duru vyriai'
+      name:'Durų vyriai'
     },
     {
-      name:'Door lock/Duru uzraktas'
+      name:'Durų užraktas'
     },
     {
-      name:'Door rubber sealing/Duru sandarinimo guma'
+      name:'Durų sandarinimo guma'
     },
     {
-      name:'Door panel/Duru apmusimas/Panele'
+      name:'Durų apmušimas/Panelė'
     },
     {
-      name:'Door card/Duru panele'
+      name:'Durų panelė'
     },
     {
-      name:'A set of parts from door/Komplektas detaliu nuo duru CAR'
+      name:'Komplektas detalių nuo durų CAR'
     },
     {
-      name:'Exhaust/Duslintuvas'
+      name:'Duslintuvas'
     },
     {
-      name:'Towbar/Farkopas'
+      name:'Farkopas'
     },
     {
-      name:'Rear axle/Galine vaziuokle'
+      name:'Galinė važiuoklė'
     },
     {
-      name:'Rear bumper/Galinis buferis'
+      name:'Galinis buferis'
     },
     {
-      name:'Rear bumper grill/Galinio buferio groteles'
+      name:'Galinio buferio grotelės'
     },
     {
-      name:'Rear bumper member/Galinio buferio stiprintuvas'
+      name:'Galinio buferio stiprintuvas'
     },
     {
-      name:'Rear light/Galinis zibintas'
+      name:'Galinis žibintas'
     },
     {
-      name:'Rear transfer box/Galinis reduktroius'
+      name:'Galinis reduktroius'
     },
     {
-      name:'Rear view mirror/Galinio vaizdo veidrodėlis'
+      name:'Galinio vaizdo veidrodėlis'
     },
     {
-      name:'Speaker/Garsiakalbis'
+      name:'Garsiakalbis'
     },
     {
-      name:'Subwoofer with amplifier/Zemu dazniu garsiakalbis su stiprintuvu'
+      name:'Žemu dažnių garsiakalbis su stiprintuvu'
     },
     {
-      name:'Sound speaker/Garso kolonele'
+      name:'Garso kolonelė'
     },
     {
-      name:'Grill/Groteles'
+      name:'Groteles'
     },
     {
-      name:'Wheel hub/Guoliaviete'
+      name:'Guoliavietė'
     },
     {
-      name:'Intercooler hose/Interkuliario slanga'
+      name:'Interkuliario šlanga'
     },
     {
-      name:'Intercooler radiator/Intercoolerio radiatorius'
+      name:'Intercoolerio radiatorius'
     },
     {
-      name:'Switch/Jungtukas'
+      name:'Jungtukas'
     },
     {
-      name:'Cardan shaft/Kardaninis velenas'
+      name:'Kardaninis velenas'
     },
     {
-      name:'Mats/Kilimeliai'
+      name:'Kilimeliai'
     },
     {
-      name:'Climate control module with radio player/Klimatronikas su magnetola'
+      name:'Klimatronikas su magnetola'
     },
     {
-      name:'Climate control module/Klimato kontroles modulis'
+      name:'Klimato kontrolės modulis'
     },
     {
-      name:'AC compressor/Kondicionierius kompresosius'
+      name:'AC/Kondicionierius kompresosius'
     },
     {
-      name:'AC hose/Kondicionieriaus slanga'
+      name:'AC /Kondicionieriaus šlanga'
     },
     {
-      name:'AC pipes/Kondicionieriaus vamzdeliai'
+      name:'AC /Kondicionieriaus vamzdeliai'
     },
     {
-      name:'Console/Konsole'
+      name:'Konsole'
     },
     {
-      name:'Carpet/Kilimas'
+      name:'Kilimas'
     },
     {
-      name:'Fuel pump/Kuro siurblys'
+      name:'Kuro siurblys'
     },
     {
-      name:'Window lifting mechanism/Lango pakelimo mechnaizmas'
+      name:'Lango pakelimo mechnaizmas'
     },
     {
-      name:'Window washing fluid tank/Langu apiplovimo skyscio bakelis'
+      name:'Langu apiplovimo skysčio bakelis'
     },
     {
-      name:'Ceiling/Lubos'
+      name:'Lubos'
     },
     {
-      name:'Radio player/Magnetola'
+      name:'Magnetola'
     },
     {
-      name:'Air filter box/Oro filtro deze'
+      name:'Oro filtro deze'
     },
     {
-      name:'Air intake hose/Oro paemimo slanga'
+      name:'Oro paemimo slanga'
     },
     {
-      name:'Duct/Ortakis'
+      name:'Ortakis'
     },
     {
-      name:'Tyre repair set/Padangos remonto komplektas'
+      name:'Padangos remonto komplektas'
     },
     {
-      name:'Auxiliary heater WEBASTO/Papildomas sildytuvas WEBASTO'
+      name:'WEBASTO/Papildomas sildytuvas WEBASTO'
     },
     {
-      name:'Gear shifting mechanism cable/Pavaru perjungimo mechanizmo lynas'
+      name:'Pavaru perjungimo mechanizmo lynas'
     },
     {
-      name:'Gear shifting mechanism/Pavaru perjungimo mechanizmas'
+      name:'Pavaru perjungimo mechanizmas'
     },
     {
-      name:'Gearbox cooling radiator/Pavaru dezes ausintuvas/radiatorius'
+      name:'Pavaru dezes ausintuvas/radiatorius'
     },
     {
-      name:'Pedal set/Pedaline'
+      name:'Pedaline'
     },
     {
-      name:'Pedal/Pedalai'
+      name:'Pedalai'
     },
     {
-      name:'Dashboard/Prietaisu panele'
+      name:'Prietaisu panele'
     },
     {
-      name:'Dashboard member/Prietaisu paneles remas'
+      name:'Prietaisu paneles remas'
     },
     {
-      name:'Instrument cluster/Prietaisu skydelis'
+      name:'Prietaisu skydelis'
     },
     {
-      name:'Armrest/porankis'
+      name:'porankis'
     },
     {
-      name:'Turn light/Posukio žibintas'
+      name:'Posukio žibintas'
     },
 
     {
-      name:'Turn light switch/Posukiu jungiklis'
+      name:'Posukiu jungiklis'
     },
     {
-      name:'Underfender/Posparnis'
+      name:'Posparnis'
     },
     {
-      name:'Bumper Guard bar/Priekinio buferio apsauginis lankas'
+      name:'Priekinio buferio apsauginis lankas'
     },
     {
-      name:'Fog light/Priesrukinis zibintas'
+      name:'Priesrukinis zibintas'
     },
     {
-      name:'Front axle member/Priekinis traversas'
+      name:'Priekinis traversas'
     },
     {
-      name:'Front axle/Priekine vaziuokle'
+      name:'Priekine vaziuokle'
     },
     {
-      name:'Front bumper/Priekinis buferis'
+      name:'Priekinis buferis'
     },
     {
-      name:'Front bumper member/Priekinio buferio stiprintuvas'
+      name:'Priekinio buferio stiprintuvas'
     },
     {
-      name:'Front grill/Priekines groteles'
+      name:'Priekines groteles'
     },
     {
-      name:'Front light/Priekinis zibintas'
+      name:'Priekinis zibintas'
     },
     {
-      name:'Front transfer box/Priekinis reduktorius'
+      name:'Priekinis reduktorius'
     },
     {
-      name:'Mudguards/Purvasaugiai'
+      name:'Purvasaugiai'
     },
     {
       name:'Lock carrier with mounting for radiators/Radiatoriu panele'

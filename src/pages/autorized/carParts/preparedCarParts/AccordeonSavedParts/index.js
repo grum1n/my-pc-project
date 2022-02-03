@@ -27,15 +27,15 @@ function SavedCarParts({ savedCarPartsID }) {
     return (
         <ul className='saved-car-parts-table'>
             <li className='saved-car-parts-table-title'>
-                <span className='table-title-name'>No.</span>
-                <span className='table-title-name'>Part</span>
+                <span className='table-title-name'>Nr.</span>
+                <span className='table-title-name'>Detalė</span>
             </li>
             {
                 newData.map((part, partId) => {
                     return(
                         <li key={partId} className='accordeon-saved-car-parts'>
                             <span className=''>{partId + 1}. {part} </span>
-                            <LinksButton redirectPath={`/autorized/car_parts/edit/${savedCarPartsID}/${partId}`} name={`Edit id: ${partId}`}/>
+                            <LinksButton redirectPath={`/autorized/car_parts/edit/${savedCarPartsID}/${partId}`} name={`redaguoti id: ${partId}`}/>
                         </li>
                     )
                 })

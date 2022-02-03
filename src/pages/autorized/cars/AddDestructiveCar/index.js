@@ -80,51 +80,51 @@ function AddDestructiveCar() {
         <section>
             <form  className='addCarForm' onSubmit={handleSubmit}>
                 <div className='add-car-input-box'>
-                    <label htmlFor='carBrand'>Brand</label>
+                    <label htmlFor='carBrand'>Markė</label>
                     <input 
                         type='text'
                         id='carBrand'
                         name='carBrand'
-                        placeholder='Car brand.. '
+                        placeholder='Markė.. '
                         value={carBrand || ''}
                         onChange={handleInput}
                     />
                 </div>
                 <div className='add-car-input-box'>
-                    <label htmlFor='carModel'>Model</label>
+                    <label htmlFor='carModel'>Modelis</label>
                     <input 
                         type='text'
                         id='carModel'
                         name='carModel'
-                        placeholder='Car model.. '
+                        placeholder='Modelis.. '
                         value={carModel || ''}
                         onChange={handleInput}
                     />
                 </div>
                 <div className='add-car-input-box'>
-                    <label htmlFor='contact'>Year</label>
+                    <label htmlFor='contact'>Metai</label>
                     <input 
                         type='number'
                         id='carYear'
                         name='carYear'
-                        placeholder='Car year.. '
+                        placeholder='Metai.. '
                         value={carYear || ''}
                         onChange={handleInput}
                     />
                 </div>
                 <div className='add-car-input-box'>
-                    <label htmlFor='status'>Status</label>
+                    <label htmlFor='status'>Statusas</label>
                     <input 
                         type='text'
                         id='status'
                         name='status'
-                        placeholder='Status.. '
+                        placeholder='Statusas.. '
                         value={status || ''}
                         onChange={handleInput}
                     />
                 </div>
                 <div className='add-car-input-box'>
-                        <input  type='submit' value='Add car' className='add-car-submit' />
+                        <input  type='submit' value='Pridėti auto' className='add-car-submit' />
                 </div>
             </form>
         </section>

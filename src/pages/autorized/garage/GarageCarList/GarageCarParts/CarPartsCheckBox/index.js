@@ -64,7 +64,7 @@ function CarPartsCheckBox() {
                         );
                     })
                 }   
-                <button type='submit' className='checkbox-submit-button'>Add parts</button>
+                <button type='submit' className='checkbox-submit-button'>Pridėti į sąrašą</button>
             </ul>
         </form>
     );

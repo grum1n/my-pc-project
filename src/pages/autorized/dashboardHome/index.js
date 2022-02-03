@@ -16,11 +16,11 @@ function DashboardHome() {
             <DashboardContent>
                 <Cards />
                 <section className='section-one-card'> 
-                    <SingleCard title='Car Parts List'>
+                    <SingleCard title='Detalės'>
                         <div className='dashboard-searchField-box'>
                             <SearchField
                                 navigatePath={`/autorized/car_parts_search?carPartName=`}
-                                placehoderText='Search Part Name ...'
+                                placehoderText='Detalės pavadinimas ...'
                                 buttonColor='#333333'
                             />
                         </div>

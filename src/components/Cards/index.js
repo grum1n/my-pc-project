@@ -53,7 +53,7 @@ function Cards() {
                 <div className='card-single'>
                     <div>
                         <h3>{countCars.length}</h3>
-                        <span>Cars</span>
+                        <span>Automobiliai</span>
                     </div>
                     <div>
                         <span className=''><FaIcons.FaCar /></span>
@@ -62,7 +62,7 @@ function Cards() {
                 <div className='card-single'>
                 <div>
                     <h3>{countCarParts.length}</h3>
-                    <span>Car Parts</span>
+                    <span>Detalės</span>
                 </div>
                 <div>
                     <span className=''><FaIcons.FaReceipt /></span>
@@ -71,7 +71,7 @@ function Cards() {
                 <div className='card-single'>
                     <div>
                         <h3>{countCustomers.length}</h3>
-                        <span>Customers</span>
+                        <span>Klientai</span>
                     </div>
                     <div>
                         <span className=''><FaIcons.FaUsers /></span>
@@ -80,7 +80,7 @@ function Cards() {
                 <div className='card-single'>
                 <div>
                     <h3>&euro;17k</h3>
-                    <span>Price of parts</span>
+                    <span>Pardavimai</span>
                 </div>
                 <div>
                     <span className=''><FaIcons.FaWallet /></span>

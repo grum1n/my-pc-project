@@ -67,7 +67,7 @@ function Dashboard({ userEmail, logOut, children }) {
                             <small>Super Admin</small>
                         </li>
                         <li className='logout-button-container'>
-                            <Button onClick={handleLogout} cName='logout-button' name='Logout' />
+                            <Button onClick={handleLogout} cName='logout-button' name='Atsijungti' />
                         </li>
                     </ul>
                 </div>
@@ -86,7 +86,7 @@ function Dashboard({ userEmail, logOut, children }) {
                         );
                     })}
                 </ul>
-                <Button onClick={handleLogout} cName='sidebar-logout-button' name='Logout' />
+                <Button onClick={handleLogout} cName='sidebar-logout-button' name='Atsijungti' />
             </nav>
             <div className={main ? 'main-content' : 'main-content-full'}>
                 {children}

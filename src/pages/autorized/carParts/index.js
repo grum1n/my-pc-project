@@ -9,9 +9,9 @@ function CarParts() {
     const { user, logOut } = useUserAuth();
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
-            <DashboardContent name='Car Parts'>
+            <DashboardContent name='Detalės'>
                 <section className='section-one-card'> 
-                    <SingleCard title='Prepared Car Parts'>
+                    <SingleCard title='Paruoštos automobilių detalės'>
                         <PreparedCarParts />
                     </SingleCard>
                 </section>   

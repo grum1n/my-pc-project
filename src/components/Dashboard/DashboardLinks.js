@@ -10,31 +10,31 @@ export const DashboardLinks = [
     cName: 'sidebar-links active'
   },
   {
-    title: 'Team Group',
+    title: 'Grupės',
     path: '/autorized/team_group',
     icon: <IoIcons.IoMdPeople />,
     cName: 'sidebar-links'
   },
   {
-    title: 'Customers',
+    title: 'Klientai',
     path: '/autorized/custumers',
     icon: <FaIcons.FaUsers />,
     cName: 'sidebar-links'
   },
   {
-    title: 'Cars',
+    title: 'Automobiliai',
     path: '/autorized/cars',
     icon: <FaIcons.FaCar />,
     cName: 'sidebar-links'
   },
   {
-    title: 'Garage',
+    title: 'Garažas',
     path: '/autorized/garage',
     icon: <FaIcons.FaWarehouse />,
     cName: 'sidebar-links'
   },
   {
-      title: 'Car parts',
+      title: 'Detalės',
       path: '/autorized/car_parts',
       icon: <FaIcons.FaReceipt />,
       cName: 'sidebar-links'

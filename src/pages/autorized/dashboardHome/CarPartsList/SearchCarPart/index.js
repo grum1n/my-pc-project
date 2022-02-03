@@ -10,9 +10,9 @@ function SearchCarPartResult() {
        
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
-            <DashboardContent name='Search Car Part'>
+            <DashboardContent name='Paieška'>
             <section className='section-one-card'> 
-                <SingleCard title='Search car  part result'>
+                <SingleCard title='Detalės pavadinimo paieška'>
                     <SearchCarPart />
                 </SingleCard>
             </section>

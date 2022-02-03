@@ -11,14 +11,14 @@ function Cars() {
        
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
-            <DashboardContent name='Cars'>
+            <DashboardContent name='Automobiliai'>
             <section className='section-one-card'> 
-                <SingleCard title='Add Car'>
+                <SingleCard title='Pridėti automobilį'>
                     <AddDestructiveCar />
                 </SingleCard>
             </section>
             <section className='section-one-card'> 
-                <SingleCard title='Cars List'>
+                <SingleCard title='Automobilių sąrašas'>
                     <CarsList />
                 </SingleCard>
             </section>

@@ -63,15 +63,15 @@ const TeamGroup = () => {
 
   return (
     <Dashboard userEmail={user.email} logOut={logOut}>
-      <DashboardContent name='Team group'>
+      <DashboardContent name='Grupės'>
       <section className='section-one-card'> 
-        <SingleCard title='Groups'>
+        <SingleCard title='Grupių valdymas'>
           <ul className='groups-container'>
             <li>
             <input type='text' value={group} onChange={handleGroupChange} />
             {isEdit ? (
                 <>
-                  <button onClick={handleSubmitChange}>Change Group</button>
+                  <button onClick={handleSubmitChange}>Pakeisti pavadinimą</button>
                   <button onClick={() => {
                       setIsEdit(false);
                       setGroup('');
@@ -80,7 +80,7 @@ const TeamGroup = () => {
             ) :
               (
                   <>
-                  <button className='group-button' onClick={writeToDatabase} >Add group</button>
+                  <button className='group-button' onClick={writeToDatabase} >Pridėti grupę</button>
                   </>
               )}
             </li>  

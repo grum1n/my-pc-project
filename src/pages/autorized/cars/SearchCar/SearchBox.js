@@ -26,22 +26,23 @@ function CarSearchBox () {
 
     return (
         <div>
-            <LinksButton redirectPath={`/autorized/cars`} name={'Go back to Cars List'} />
+            <LinksButton redirectPath={`/autorized/cars`} name={'atgal'} />
             <SearchField
                 navigatePath={`/autorized/cars_search?carBrand=`}
-                placehoderText='Search car brand ...'
+                placehoderText='Auto paieška ...'
+                buttonColor='#333333'
             />
             {Object.keys(data).length === 0 ? (
             <h2>No Search Found with that name :</h2>
         ) : (
                  <table className='search-table'>
-                 <thead style={{ backgroundColor: 'var(--dark-gray)', color: 'var(--tate-olive)' }}>
+                 <thead style={{ backgroundColor: 'var(--dark-gray)', color: 'var(--white)' }}>
                      <tr>
-                         <th style={{ textAlign: 'center' }}>No.</th>
-                         <th style={{ textAlign: 'center' }}>Car Name </th>
-                         <th style={{ textAlign: 'center' }}>Model</th>
-                         <th style={{ textAlign: 'center' }}>Year</th>
-                         <th style={{ textAlign: 'center' }}>Status</th>
+                         <th style={{ textAlign: 'center' }}>Nr.</th>
+                         <th style={{ textAlign: 'center' }}>Mark4 </th>
+                         <th style={{ textAlign: 'center' }}>Modelis</th>
+                         <th style={{ textAlign: 'center' }}>Metai</th>
+                         <th style={{ textAlign: 'center' }}>Statusas</th>
                      </tr>
                  </thead>
                  <tbody>

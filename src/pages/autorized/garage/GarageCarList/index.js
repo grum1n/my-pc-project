@@ -24,12 +24,12 @@ function GarageCarList() {
     return(
         <ul className='garage-list-container'>
             <li className='garage-list-title'>
-                <span className='garage-info-container'>No.</span>
-                <span className='garage-info-container'>Brand</span>
-                <span className='garage-info-container'>Model</span>
-                <span className='garage-info-container'>Years</span>
-                <span className='garage-info-container'>Status</span>
-                <span className='garage-list-action-box'>Action</span>
+                <span className='garage-info-container'>Nr.</span>
+                <span className='garage-info-container'>Markė</span>
+                <span className='garage-info-container'>Modelis</span>
+                <span className='garage-info-container'>Metai</span>
+                <span className='garage-info-container'>Statusas</span>
+                <span className='garage-list-action-box'>Veiksmas</span>
             </li>
             {
                 Object.keys(data).map((id, index) => {

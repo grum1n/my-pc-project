@@ -37,16 +37,16 @@ const EditCarPartForm = ({ carId, carBrand, carModel, carYear,carPartId, carPart
     return (
         <>
           <section className='section-two-cards'>
-              <SingleCard title='Add Foto'>
+              <SingleCard title='Pridėti foto'>
                 <div className='editForm-addFoto-container'>
                   <h3 className='editForm-partName'>{carPartName}</h3>
                   <img src={url} alt='' className='editForm-image'/>
-                  <h5>Foto must be 640 x 480</h5>
+                  <h5>Foto rekomenduojamas dydis 640 x 480</h5>
                   <input  type='file' onChange={handleImageChange} />
-                  <button className='editForm-img-button' onClick={handleSubmit}>Add foto to form</button>
+                  <button className='editForm-img-button' onClick={handleSubmit}>Prodėti foto į formą</button>
                 </div>
               </SingleCard>
-              <SingleCard title='Add car part info'>
+              <SingleCard title='Pridėti papildomus duomenis'>
                 <EditSubForm 
                   carId={carId} 
                   carBrand={carBrand} 

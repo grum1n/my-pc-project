@@ -10,9 +10,9 @@ function Garage() {
        
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
-            <DashboardContent name='Garage'>
+            <DashboardContent name='Garažas'>
             <section className='section-one-card'> 
-                <SingleCard title='Destructive cars'>
+                <SingleCard title='Ardomi automobiliai'>
                     <GarageCarList />
                 </SingleCard>
             </section>

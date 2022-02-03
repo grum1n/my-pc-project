@@ -54,12 +54,12 @@ function GarageCarParts() {
    
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
-            <DashboardContent name='Garage'>
+            <DashboardContent name='Garažas'>
             <section className='section-one-card'> 
-                <SingleCard title={`${carBrand}  ${carModel} parts : `}>
+                <SingleCard title={`${carBrand}  ${carModel} pasirinkti detales : `}>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <LinksButton redirectPath={`/autorized/garage`} name={'Go back to Destructive Cars List'} />
-                        <LinksButton redirectPath={`/autorized/garage/saved_parts/${id}`} name={'Saved parts list'} />
+                        <LinksButton redirectPath={`/autorized/garage`} name={'atgal'} />
+                        <LinksButton redirectPath={`/autorized/garage/saved_parts/${id}`} name={'Išimtos detalės'} />
                     </div>
                     <hr />  
                     <CarPartsCheckBox />

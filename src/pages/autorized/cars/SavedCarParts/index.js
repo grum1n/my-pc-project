@@ -69,17 +69,17 @@ function SavedCarParts() {
 
     return (
         <Dashboard userEmail={user.email} logOut={logOut}>
-            <DashboardContent name='Cars'>
+            <DashboardContent name='Automobiliai'>
             <section className='section-one-card'> 
                 <SingleCard title={`Packing list Id : ${id}`}>
-                    <LinksButton redirectPath={`/autorized/cars`} name={'Go back to Cars List'} />
+                    <LinksButton redirectPath={`/autorized/cars`} name={'atgal'} />
                     <h3 style={{ padding: '30px 0 0', width: '100%', textAlign: 'center' }}>
-                        {carBrand} {carModel} - saved parts :
+                        {carBrand} {carModel} - išimtos detalės :
                     </h3>   
                     <ul className='parts-list-container'>
                         <li className='parts-list-title'>
-                            <span className='parts-info-container'>No.</span>
-                            <span className='parts-info-container-center'>Part</span>
+                            <span className='parts-info-container'>Nr.</span>
+                            <span className='parts-info-container-center'>Detalė</span>
                         </li>
                         {
                                 newData.map((item, partId) => {

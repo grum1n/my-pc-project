@@ -39,18 +39,18 @@ function CarsList() {
             <li className='cars-search-container'>
                 <SearchField
                     navigatePath={`/autorized/cars_search?carBrand=`}
-                    placehoderText='Search car brand ...'
+                    placehoderText='Auto paieška ...'
                     buttonColor='#333333'
 
                 />
             </li>
             <li className='cars-list-title'>
-                <span className='cars-info-container'>No.</span>
-                <span className='cars-info-container'>Brand</span>
-                <span className='cars-info-container'>Model</span>
-                <span className='cars-info-container'>Years</span>
-                <span className='cars-info-container'>Status</span>
-                <span className='cars-list-action-box'>Action</span>
+                <span className='cars-info-container'>Nr.</span>
+                <span className='cars-info-container'>Markė</span>
+                <span className='cars-info-container'>Modelis</span>
+                <span className='cars-info-container'>Metai</span>
+                <span className='cars-info-container'>Statusas</span>
+                <span className='cars-list-action-box'>Veiksmas</span>
             </li>
             {
                 Object.keys(data).map((id, index) => {
